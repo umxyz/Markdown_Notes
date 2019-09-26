@@ -1,5 +1,8 @@
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/yuuxeun/College_Study_Markdown.git
+git remote add origin ___________________________
 git push -u origin master
+
+git remote add origin _______________________________
+PS D:\yeun\Study\Project\Markdown> git push -u origin master

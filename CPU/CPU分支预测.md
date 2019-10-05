@@ -145,7 +145,7 @@ _fun1:                                  ## @fun1
 	movl	%edi, -4(%rbp)
 	movl	$0, -8(%rbp)
 	cmpl	$0, -4(%rbp)
-	jge	LBB0_2     ## 如果cmpl指令判断的结果是大于等于，就跳转到LBB0_2代码块  
+	jge	LBB0_2     ## 如果cmpl指令判断的结果是大于等于，就跳转到LBB0_2代码块
 ## %bb.1:
 	movl	-8(%rbp), %eax
 	addl	$1, %eax
@@ -158,8 +158,8 @@ LBB0_2:
                                         ## -- End function
 	.globl	_fun2                   ## -- Begin function fun2
 	.p2align	4, 0x90
-	
-	
+
+
 _fun2:                                  ## @fun2
 	.cfi_startproc
 ## %bb.0:
@@ -272,5 +272,3 @@ BranchPredictionTest.countUnsortedArr  avgt    3  5251.890 ±   64.813  us/op
 3. [CPU分支预测](https://www.cnblogs.com/TaigaCon/p/7791303.html)
 4. [局部性原理](https://blog.csdn.net/xindoo/article/details/97525694)
 
-
- 

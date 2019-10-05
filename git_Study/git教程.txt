@@ -11,51 +11,51 @@ PS D:\yeun\Study\Project\Markdown> git push -u origin master
 
 git config --global user.name '仓库名'
 
- 
+
 
 2.设置用户名邮箱
 
 git config --global user.email 'matchlessherovip@163.com'
 
- 
+
 
 3.查看设置
 
 git config --list
 
- 
+
 
 4.初始化
 
 git init
 
- 
+
 
 5.查看状态
 
 git status
 
- 
 
- 
+
+
 
 6.创建文件
 
 touch test.java
 
- 
+
 
 7.将文件添加到暂存区
 
 git add test.java
 
- 
+
 
 8.将文件添加到仓库
 
 git commit -m'描述信息'
 
- 
+
 
 8.1将本地仓库代码提交到远程仓库
 

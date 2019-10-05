@@ -1,11 +1,4 @@
-### 文章目录
-
-- - - [第一步：下载安装](https://mp.csdn.net/mdeditor/100542557#_2)
-    - [第二步：环境配置](https://mp.csdn.net/mdeditor/100542557#_9)
-    - [第三步 下载安装VSCode（已经装好了请跳到第四步）](https://mp.csdn.net/mdeditor/100542557#_VSCode_13)
-    - [第四步：安装VSCode cpp相关的插件](https://mp.csdn.net/mdeditor/100542557#VSCode_cpp_17)
-    - [第五步：配置c++的.vscode文件](https://mp.csdn.net/mdeditor/100542557#cvscode_22)
-    - [第六步：配置c语言的.vscode文件](https://mp.csdn.net/mdeditor/100542557#cvscode_225)
+[TOC]
 
 **vscode c++ 环境配置**
 
@@ -271,18 +264,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch", // 配置名称，将会在启动配置的下拉菜单中显示  
-            "type": "cppdbg", // 配置类型，这里只能为cppdbg  
-            "request": "launch", // 请求配置类型，可以为launch（启动）或attach（附加）  
-            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe", // 将要进行调试的程序的路径  
-            "args": [], // 程序调试时传递给程序的命令行参数，一般设为空即可  
-            "stopAtEntry": false, // 设为true时程序将暂停在程序入口处，一般设置为false  
-            "cwd": "${workspaceFolder}", // 调试程序时的工作目录，一般为${workspaceRoot}即代码所在目录  
+            "name": "(gdb) Launch", // 配置名称，将会在启动配置的下拉菜单中显示
+            "type": "cppdbg", // 配置类型，这里只能为cppdbg
+            "request": "launch", // 请求配置类型，可以为launch（启动）或attach（附加）
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe", // 将要进行调试的程序的路径
+            "args": [], // 程序调试时传递给程序的命令行参数，一般设为空即可
+            "stopAtEntry": false, // 设为true时程序将暂停在程序入口处，一般设置为false
+            "cwd": "${workspaceFolder}", // 调试程序时的工作目录，一般为${workspaceRoot}即代码所在目录
             "environment": [],
-            "externalConsole": true, // 调试时是否显示控制台窗口，一般设置为true显示控制台  
+            "externalConsole": true, // 调试时是否显示控制台窗口，一般设置为true显示控制台
             "MIMode": "gdb",
-            "miDebuggerPath": "C:/Program Files (x86)/mingw64/bin/gdb.exe", // miDebugger的路径，注意这里要与MinGw的路径对应  
-            "preLaunchTask": "gcc", // 调试会话开始前执行的任务，一般为编译程序，c++为g++, c为gcc  
+            "miDebuggerPath": "C:/Program Files (x86)/mingw64/bin/gdb.exe", // miDebugger的路径，注意这里要与MinGw的路径对应
+            "preLaunchTask": "gcc", // 调试会话开始前执行的任务，一般为编译程序，c++为g++, c为gcc
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",

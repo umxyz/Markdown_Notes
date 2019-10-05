@@ -1,5 +1,3 @@
-<font color = "7E123F">**2019年10月4日 15点03分**</font>
-
 # ShadowsocksR 协议插件
 
 ## 概要

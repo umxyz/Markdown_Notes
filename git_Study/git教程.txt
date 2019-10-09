@@ -1,6 +1,6 @@
 git init
-git add README.md
-git commit -m "first commit"
+git add .
+git commit -m "sync"
 git remote add origin ___________________________
 git push -u origin master
 
@@ -67,3 +67,13 @@ git push
 
 
 https://blog.csdn.net/qq_36571778/article/details/80944557
+
+rm -rf .git
+git init
+git add .
+git commit -m "sync"
+git pull <远程主机名> <远程分支名>:<本地分支名>
+git branch --set-upstream-to  https://github.com/shi-yang/jnoj.git master
+git fetch https://github.com/shi-yang/jnoj.git
+git remote add -f origin git@https://github.com/shi-yang/jnoj.git
+

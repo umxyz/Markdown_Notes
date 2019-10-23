@@ -3,7 +3,7 @@
 git init
 git add .
 git commit -m "sync"
-git remote add origin https://github.com/yuuxeun/HUNAU_ACM_OJ_jnoj
+git remote add origin https://github.com/yuuxeun/HUNAU_ACM_OJ
 git push -u origin master
 ```
 

@@ -71,7 +71,7 @@ sudo ufw status
 `Disabling the Firewall`
 
 ```bash
-$ sudo ufw disable
+sudo ufw disable
 Firewall stopped and disabled on system startup
 ```
 
@@ -80,7 +80,7 @@ Firewall stopped and disabled on system startup
 關閉防火牆後, 要再次開啟防火牆, 執行以下指令開啟:
 
 ```bash
-$ sudo ufw enable
+sudo ufw enable
 ```
 
 

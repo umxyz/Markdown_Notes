@@ -1,5 +1,7 @@
 [TOC]
 
+[crontab命令查看]( https://crontab.guru/ )
+
 #  crontab 定时任务
 
 通过crontab 命令，我们可以在固定的间隔时间执行指定的系统指令或 shell script脚本。时间间隔的单位可以是分钟、小时、日、月、周及以上的任意组合。这个命令非常适合周期性的日志分析或数据备份等工作。
@@ -229,13 +231,13 @@ $crontab -r
 更新系统时间时区后需要重启cron,在ubuntu中服务名为cron:
 
 ```bash
-$service cron restart
+service cron restart
 ```
 
 ubuntu下启动、停止与重启cron:
 
 ```bash
-$sudo /etc/init.d/cron start
-$sudo /etc/init.d/cron stop
-$sudo /etc/init.d/cron restart
+sudo /etc/init.d/cron start
+sudo /etc/init.d/cron stop
+sudo /etc/init.d/cron restart
 ```

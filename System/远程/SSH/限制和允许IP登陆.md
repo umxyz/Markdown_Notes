@@ -39,6 +39,7 @@ service sshd restart
 ## 2、限制IP SSH登录
 
 **说明：这里的IP是指客户端IP，不是服务器IP，下面的例子使用了hosts.allow文件的配置方式，目的是快，但也有不灵活的，建议改成iptables的方案。
+
 **
 
 除了可以禁止某个用户登录，我们还可以针对**固定的IP进行禁止登录**，linux 服务器通过设置**/etc/hosts.allow**和**/etc/hosts.deny**这个两个文件，hosts.allow许可大于hosts.deny可以限制或者允许某个或者某段IP地址远程 SSH 登录服务器，方法比较简单，且设置后立即生效，不需要重启SSHD服务，具体如下：

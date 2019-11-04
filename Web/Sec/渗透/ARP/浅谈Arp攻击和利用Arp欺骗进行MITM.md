@@ -2,7 +2,7 @@
 
 # 浅谈Arp攻击和利用Arp欺骗进行MITM
 
-[![img](浅谈Arp攻击和利用Arp欺骗进行MITM.assets/t0185f4a23e5511c015.png)](https://p0.ssl.qhimg.com/t0185f4a23e5511c015.png)
+[![img](assets/t0185f4a23e5511c015.png)](https://p0.ssl.qhimg.com/t0185f4a23e5511c015.png)
 
  
 
@@ -73,17 +73,17 @@ ARP协议信任以太网所有的节点，效率高但是不安全。这份协�
 我的Kali是在虚拟机下，需要Bridge连接保证机器在同一网段，很多人用Nat连接来转发，在实战的轻快下，需要更改虚拟机的网络配置。
 
 网络配置如图:
-[![img](浅谈Arp攻击和利用Arp欺骗进行MITM.assets/t010ded0516622b1c75.png)](https://p5.ssl.qhimg.com/t010ded0516622b1c75.png)
+[![img](assets/t010ded0516622b1c75.png)](https://p5.ssl.qhimg.com/t010ded0516622b1c75.png)
 
 ### 实操
 
 这里模拟真实环境，攻击主机A和被攻击主机B在同一局域网下。
 **1. 先用命令查看一下ip是否正确：**
 Kali：
-[![img](浅谈Arp攻击和利用Arp欺骗进行MITM.assets/t01140b6dbaec16750c.jpg)](https://p5.ssl.qhimg.com/t01140b6dbaec16750c.jpg)
+[![img](assets/t01140b6dbaec16750c.jpg)](https://p5.ssl.qhimg.com/t01140b6dbaec16750c.jpg)
 可以看到ip是192.168.11.106
 Windows7：
-[![img](浅谈Arp攻击和利用Arp欺骗进行MITM.assets/t01676bafc8546dc6d5.png)](https://p5.ssl.qhimg.com/t01676bafc8546dc6d5.png)
+[![img](assets/t01676bafc8546dc6d5.png)](https://p5.ssl.qhimg.com/t01676bafc8546dc6d5.png)
 ip是192.168.11.105，网关地址是192.108.11.1
 **2. 用nmap查看当前网端的活跃主机**
 
@@ -91,14 +91,14 @@ ip是192.168.11.105，网关地址是192.108.11.1
 nmap -sF 192.168.11.0/24
 ```
 
-[![img](浅谈Arp攻击和利用Arp欺骗进行MITM.assets/t01160b3ef83d34572e.jpg)](https://p3.ssl.qhimg.com/t01160b3ef83d34572e.jpg)
+[![img](assets/t01160b3ef83d34572e.jpg)](https://p3.ssl.qhimg.com/t01160b3ef83d34572e.jpg)
 
 扫描得到如图活跃主机，可以看到我们的主机B。当然获取Ip的途径不可能这么简单，你也可以用fping的方法来分析，之前我用fping探测局域网windows10的主机，发现Ping不通，win10防火墙还是有点东西。不过你可以根据fping的发送包来推断主机是否真正存活，具体可以google一下fping的用法，这里给推荐一个链接
 
 [Kali信息收集：Fping](https://www.cnblogs.com/dunitian/p/5074783.html)
 
 **3. 检查被攻击主机是否可以正常上网**
-[![img](浅谈Arp攻击和利用Arp欺骗进行MITM.assets/t010225c59bde160166.png)](https://p4.ssl.qhimg.com/t010225c59bde160166.png)
+[![img](assets/t010225c59bde160166.png)](https://p4.ssl.qhimg.com/t010225c59bde160166.png)
 百度正常访问
 
 **4. 利用Arpspoof进行欺骗攻击**
@@ -133,16 +133,16 @@ Kali自带的Arpspoof可以很好的进行欺骗，man arpspoof查看官网手�
 **5. 主机A作为网关主机欺骗**
 命令语句
 
-```
-arpspoof -i eth0 -t 192.168.11.105 192.168.1.1
+```bash
+arpspoof -i eth0 -t 192.168.11.105 192.168.11.1
 ```
 
-[![img](浅谈Arp攻击和利用Arp欺骗进行MITM.assets/t01364b901401aae698.jpg)](https://p3.ssl.qhimg.com/t01364b901401aae698.jpg)
+[![img](assets/t01364b901401aae698.jpg)](https://p3.ssl.qhimg.com/t01364b901401aae698.jpg)
 执行命令，Kali会向主机B发送ARP响应包，响应包的内容是Kali的ip-mac地址，而响应包里的ip则是网关主机ip地址。每一行代表一个响应包。从左到右：自己Kali的mac、主机B的mac、帧类型码(0806，代表ARP包)、包大小、包内容。
 
 **6. 被攻击主机B网络中断**
 我们在B主机用`arp -a`查看一下是否欺骗成功
-[![img](浅谈Arp攻击和利用Arp欺骗进行MITM.assets/t0178e6ea7a6cacc21f.png)](https://p1.ssl.qhimg.com/t0178e6ea7a6cacc21f.png)
+[![img](assets/t0178e6ea7a6cacc21f.png)](https://p1.ssl.qhimg.com/t0178e6ea7a6cacc21f.png)
 可以看到，网关主机C和攻击者主机A的mac地址相同，欺骗成功
 
 在kali终端输入control + c 可以停止，清空并恢复原来正确的arp相应包，主机重新恢复联网状态
@@ -203,7 +203,7 @@ root@kali:~# driftnet -i eth0
 
 ### 使用ettercap工具获取密码
 
-1. 打开新的终端，输入 attercap -G 启动工具
+1. 打开新的终端，输入 ettercap -G 启动工具
 2. 点击Sniff -> unified sniffing，选择要抓包的网卡，默认是自己的网卡eth0，点确定
 3. 然后单击Hosts -> Scan for host，待扫描完成后再次Scan for host，此时可以看到ettercap-NG已经扫描的主机列表
 4. 选择攻击目标，点击192.168.11.105的ip地址，点击Add to Target 1 ，然后选择网关的ip地址192.168.11.1，点击Add to Target 2
@@ -229,11 +229,11 @@ root@kali:~# urlsnarf -i eth0
 
 ## 关于Arp欺骗的防御
 
-[![img](浅谈Arp攻击和利用Arp欺骗进行MITM.assets/t019370399a03c046c4.png)](https://p4.ssl.qhimg.com/t019370399a03c046c4.png)
+[![img](assets/t019370399a03c046c4.png)](https://p4.ssl.qhimg.com/t019370399a03c046c4.png)
 防御原理很简单，就是不让攻击者肆意表明自己就是网关主机。我们进入网关主机（路由器后台地址），网络参数一栏一般有ip与mac绑定一栏，把网关的mac地址与网关地址绑定就好了。只要确定了对应关系，当攻击者发布arp相应包时，就不会更新相应的ip-mac缓存表。
 
 我们重新进行欺骗后，再查询B主机的arp缓存表，如图
-[![img](浅谈Arp攻击和利用Arp欺骗进行MITM.assets/t01ec70b4f6e8316b7b.png)](https://p3.ssl.qhimg.com/t01ec70b4f6e8316b7b.png)
+[![img](assets/t01ec70b4f6e8316b7b.png)](https://p3.ssl.qhimg.com/t01ec70b4f6e8316b7b.png)
 网关主机的mac并没有被欺骗成功，我们的防御达到目的
 
 如果想知道对方主机的ip地址其实也容易。我们在Cmd下键入命令`arp -a`看一下相同mac，就找到了攻击者。

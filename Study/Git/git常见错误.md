@@ -44,14 +44,14 @@ http://www.oschina.net/question/159132_86728
 
 如果在github的remote上已经有了文件，会出现错误。此时应当先pull一下，即：
 
-```html
-$ git pull origin master
+```bash
+git pull origin master
 ```
 
 然后再进行：
 
-```html
-$ git push origin master
+```bash
+git push origin master
 ```
 
 

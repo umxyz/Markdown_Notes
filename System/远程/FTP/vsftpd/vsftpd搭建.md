@@ -387,11 +387,11 @@ FTP：// 203.0.113.0
 
 如果按预期的一切，你应该看到`pub`目录：
 
-![浏览器中的“pub”文件夹的图像](vsftpd搭建.assets/anonftp-pub.png)
+![浏览器中的“pub”文件夹的图像](assets/anonftp-pub.png)
 
 你也应该能够点击进入`pub` ，看到`test.txt` ，然后右键单击要保存文件。
 
-![浏览器中的“test.txt”文件的图像](vsftpd搭建.assets/anonftp-test1.png)
+![浏览器中的“test.txt”文件的图像](assets/anonftp-test1.png)
 
 您还可以从命令行进行测试，这将提供更多有关您的配置的反馈。 我们将ftp到在被动模式下的服务器上，这是`-p`很多命令行客户标志。 被动模式允许用户避免更改本地防火墙配置，以允许服务器和客户端连接。
 

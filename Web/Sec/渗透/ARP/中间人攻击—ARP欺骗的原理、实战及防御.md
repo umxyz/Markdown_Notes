@@ -23,7 +23,7 @@ C假扮邮递员，首先要告诉A说：“我就是邮递员” （C主机向A
 
 C再假扮A，告诉邮递员：“我就是A” （C向网关G发送构造好的返回包，源IP为A 192.168.1.2，源MAC地址为自己的MAC地址），智商捉急的邮递员想都没想就相信了，以后就把B的来信送给了C，C当然就可以知道A和B之间聊了些什么
 
-![img](中间人攻击—ARP欺骗的原理、实战及防御.assets/7216746-a913e418e4c51bfc.webp)
+![img](assets/7216746-a913e418e4c51bfc.webp)
 
 image.png
 
@@ -37,36 +37,36 @@ ARP单向欺骗就更好理解了，C只向A发送一个返回包，告诉A：G 
 
 ### 1. 目标主机缓存表
 
-![img](中间人攻击—ARP欺骗的原理、实战及防御.assets/7216746-ab666635b85b7e3a.webp)
+![img](assets/7216746-ab666635b85b7e3a.webp)
 
 ### 2. 目标IP和本机IP
 
-![img](中间人攻击—ARP欺骗的原理、实战及防御.assets/7216746-ce3850b3dc029599.webp)
+![img](assets/7216746-ce3850b3dc029599.webp)
 
 目标IP.jpg
 
 1. 再进行arp欺骗之前必须要开启IP转发，否则当欺骗成功之后，目标机会断网，这样会被对方察觉。输出1，说明已经成功开启IP转发
    sysctl -w net.ipv4.ip_forward=1 或者 echo 1 > /proc/sys/net/ipv4/ip_forward
 
-   ![img](中间人攻击—ARP欺骗的原理、实战及防御.assets/7216746-de9ef84fb577bef4.webp)
+   ![img](assets/7216746-de9ef84fb577bef4.webp)
 
 2. 向目标192.168.124.133发送返回包，包含内容：
    源ip(网关)：172.16.44.254
    源MAC：00:0c:29:19:f5:77
 
-   ![img](中间人攻击—ARP欺骗的原理、实战及防御.assets/7216746-c172d45d6b0b74f4.webp)
+   ![img](assets/7216746-c172d45d6b0b74f4.webp)
 
    
 
    语句格式：arpspoof [-i interface] [-c own|host|both] [-t target] [-r] host
 
-   ![img](中间人攻击—ARP欺骗的原理、实战及防御.assets/7216746-b7270d559c3c56ad.webp)
+   ![img](assets/7216746-b7270d559c3c56ad.webp)
 
    
 
    此时再来看目标主机ARP缓存
 
-   ![img](中间人攻击—ARP欺骗的原理、实战及防御.assets/7216746-3b216451576e8b49.webp)
+   ![img](assets/7216746-3b216451576e8b49.webp)
 
    可以看出目标主机arp缓存已经发生了变化，在缓存表中所记录的网关（172.16.44.254）的MAC已经变为了攻击者的MAC
 
@@ -74,16 +74,16 @@ ARP单向欺骗就更好理解了，C只向A发送一个返回包，告诉A：G 
 
 ## 0x05 运行driftnet截取被攻击机正在浏览的网页的图片
 
-![img](中间人攻击—ARP欺骗的原理、实战及防御.assets/7216746-ac09a314386748ce.webp)
+![img](assets/7216746-ac09a314386748ce.webp)
 
 
 
-![img](中间人攻击—ARP欺骗的原理、实战及防御.assets/7216746-b25dba17e97adafb.webp)
+![img](assets/7216746-b25dba17e97adafb.webp)
 
 
 
 因为被攻击机器还没上网所以最上边的终端窗口只有输入的命令，右上的driftnet窗口黑乎乎一片什么都没有，但是可以看到上边的三个终端都已经在工作了
 接着我用被攻击的机器上网，测试效果
 
-![img](中间人攻击—ARP欺骗的原理、实战及防御.assets/7216746-97ff08af39cc6c83.webp)
+![img](assets/7216746-97ff08af39cc6c83.webp)
 

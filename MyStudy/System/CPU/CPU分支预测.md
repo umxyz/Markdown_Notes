@@ -1,6 +1,6 @@
 [TOC]
 
-# 一文告诉你CPU分支预测对性能影响有多大](https://blog.csdn.net/xindoo/article/category/9061749)
+# [一文告诉你CPU分支预测对性能影响有多大](https://blog.csdn.net/xindoo/article/category/9061749)
 
 来源于[stackoverflow](https://stackoverflow.com/)上的一个问题[为什么处理有序数组比处理无需数组快](https://stackoverflow.com/questions/11227809/why-is-it-faster-to-process-a-sorted-array-than-an-unsorted-array)，原文中已经有了一些探讨，这里我们首先来复现下结果，然后再解释下为什么！
 

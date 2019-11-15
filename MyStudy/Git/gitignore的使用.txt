@@ -1,6 +1,6 @@
 [TOC]
 
-## 0x00 gitignore的使用
+## 0x00 .gitignore的使用
 
 
 

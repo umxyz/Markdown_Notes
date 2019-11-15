@@ -6,7 +6,7 @@ LAMP 环境搭建
 #### Apache 安装（你也可以选择 Ｎginx）
 1. 获取最新资源包
     ```bash
-    sudo apt-get update 
+    sudo apt-get update
     ```
 2. 安装Apache
     ```bash
@@ -40,7 +40,7 @@ sudo apt install php7.2-mysql php7.2-curl php7.2-json php7.2-cgi php7.2 libapach
     sudo a2enmod rewrite
     ```
 2. 修改apache2.conf配置文件
-    
+   
     将其中的AllowOverride None 全部替换为 AllowOverride All
     ```bash
     sudo vim /etc/apache2/apache2.conf

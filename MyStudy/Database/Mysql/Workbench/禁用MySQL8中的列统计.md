@@ -15,9 +15,9 @@ MySQL（Workbench）8中有什么方法可以`column-statistics`永久禁用？
 使用**Mysql Workbench 8.0时**
 
 - 打开“数据导出”选项卡
-- 单击高级选项 [![在此处输入图片说明](ImageAssets/ZKjXe-1573125322244.png)](https://i.stack.imgur.com/ZKjXe.png)
-- 在其他标题下，将列统计信息设置为0 [![在此处输入图片说明](ImageAssets/QUMrG.png)](https://i.stack.imgur.com/QUMrG.png)
-- 再次导出[![在此处输入图片说明](ImageAssets/sIDmx.png)](https://i.stack.imgur.com/sIDmx.png)
+- 单击高级选项 [![在此处输入图片说明](../../../../ImageAssets/ZKjXe-1573125322244.png)](https://i.stack.imgur.com/ZKjXe.png)
+- 在其他标题下，将列统计信息设置为0 [![在此处输入图片说明](../../../../ImageAssets/QUMrG.png)](https://i.stack.imgur.com/QUMrG.png)
+- 再次导出[![在此处输入图片说明](../../../../ImageAssets/sIDmx.png)](https://i.stack.imgur.com/sIDmx.png)
 
 
 

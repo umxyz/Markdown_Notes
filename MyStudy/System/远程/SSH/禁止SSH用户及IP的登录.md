@@ -8,8 +8,6 @@ http://blog.csdn.net/linghe301/article/details/8211305
 
 一般情况下，在使用Linux操作系统都不会去机房来操作机器，都是使用一些第三方的工具来操作。
 
-![ssh](assets/ssh.jpg)
-
 比如使用SSH Secure File Transfer Client工具来传输文件，利用Putty来操作，利用Xmanger综合操作等，那么最常见的连接类型包括telnet、SSH、Raw等
 
 下面就针对SSH方面讨论一下，如果有人特别关注Linux环境的安全性，第一就从login方面来进行讨论，也就是文章标题

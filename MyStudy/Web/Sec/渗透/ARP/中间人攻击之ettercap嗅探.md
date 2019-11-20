@@ -100,7 +100,7 @@ ettercap -i eth0 -T -M arp:remote /10.0.0.1/ // 欺骗局域网内所有主机
 ettercap -i eth0 -T -M arp:remote /10.0.0.1/ /10.0.0.12/ 欺骗IP为10.0.0.12的主机
 ```
 
-　　![img](ImageAssets/262350137461740-1573358989531.png)
+　　![img](../../../../../ImageAssets/262350137461740-1573358989531.png)
 
 　　同时使用tcpdump抓包（当然也可以使用wireshark实时抓包并显示，但对本机压力比较大，建议使用tcpdump抓包，完成后再用wireshark显示）：
 
@@ -108,15 +108,15 @@ ettercap -i eth0 -T -M arp:remote /10.0.0.1/ /10.0.0.12/ 欺骗IP为10.0.0.12的
 tcpdump -i eth0
 ```
 
-　　![img](ImageAssets/262353279026525-1573358989603.png)
+　　![img](../../../../../ImageAssets/262353279026525-1573358989603.png)
 
 　　经过一段时间的抓包之后就可以停止了。打开wireshark分析捕获到的数据包分析，使用过滤语法，找出含有cookies的数据包：
 
-　　![img](ImageAssets/270003052314382-1573358989603.png)　　
+　　![img](../../../../../ImageAssets/270003052314382-1573358989603.png)　　
 
 　　复制出cookies的值，并在浏览器中利用，这里推荐一款好用的cooikes利用工具cookie-injecting-tools（地址：https://github.com/lfzark/cookie-injecting-tools）。利用成功后，刷新页面，就可以进入到被人的主页和网盘了：
 
-![img](ImageAssets/270017361996663-1573358989635.png)  ![img](ImageAssets/270018350278790-1573358989635.png)
+![img](../../../../../ImageAssets/270017361996663-1573358989635.png)  ![img](../../../../../ImageAssets/270018350278790-1573358989635.png)
 
 　　**DNS欺骗：**
 
@@ -249,11 +249,11 @@ scapy.sniff(iface=dev, filter=filter, prn=handle_packet)
 
 　　Ettercap目录下也自带了一些过滤规则：
 
-　　![img](ImageAssets/270035332621747-1573358989635.png)
+　　![img](../../../../../ImageAssets/270035332621747-1573358989635.png)
 
 　　在该目录下的etter.filter.examples文件里写了一些常用的过滤脚本:
 
-　　![img](ImageAssets/270040148247495-1573358989635.png)
+　　![img](../../../../../ImageAssets/270040148247495-1573358989635.png)
 
 　　当然,更多使用说明可以查看一下man 手册: man etterfilter.里面对所有的过滤使用的函数都有详细的说明.下面举例:
 
@@ -277,15 +277,15 @@ scapy.sniff(iface=dev, filter=filter, prn=handle_packet)
 
 　　编译成ettercap可以识别的二进制的二进制文件:
 
-　　![img](ImageAssets/270059583712014-1573358989636.png)
+　　![img](../../../../../ImageAssets/270059583712014-1573358989636.png)
 
 　　使用ettercap加载此脚本(-q 安静模式,即不显示数据包信息):
 
-　　![img](ImageAssets/270103310909127-1573358989636.png)
+　　![img](../../../../../ImageAssets/270103310909127-1573358989636.png)
 
 　　可以看到执行的效果:
 
-　　![img](ImageAssets/270105101064311-1573358989636.png)
+　　![img](../../../../../ImageAssets/270105101064311-1573358989636.png)
 
 　　(2) 替换网页的图片:
 

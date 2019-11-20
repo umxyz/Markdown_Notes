@@ -1,5 +1,3 @@
-[TOC]
-
 # Typora 完全使用详解
 
 ### **Matrix 精选**
@@ -24,7 +22,7 @@ Typora 是一款**支持实时预览的 Markdown 文本编辑器**。它有 OS X
 
 Typora 首先是一个 Markdown 文本编辑器，它支持且仅支持 Markdown 语法的文本编辑。在 [Typora 官网](https://typora.io/) 上他们将 Typora 描述为 「A truly **minimal** markdown editor. 」。
 
-![img](typora.assets/49c4cdef47bf81018b9871a628523064.png)官网首页
+![img](../../ImageAssets/49c4cdef47bf81018b9871a628523064-1574167308776.png)官网首页
 
 ### 关于 Markdown
 
@@ -32,7 +30,7 @@ Markdown 是用来编写结构化文档的一种纯文本格式，它使我们�
 
 由于目前还没有一个权威机构对 Markdown 的语法进行规范，各应用厂商制作时遵循的 Markdown 语法也是不尽相同的。其中比较受到认可的是 [GFM 标准](https://github.github.com/gfm/)，它是由著名代码托管网站 [GitHub](https://github.com/) 所制定的。Typora 主要使用的也是 GFM 标准。同时，你还可以在 `文件 - 偏好设置 - Markdown 语法偏好 - 严格模式` 中将标准设置为「更严格地遵循 GFM 标准」。具体内容你可以在官方的 [这篇文档](http://support.typora.io/Strict-Mode/) 中查看。
 
-![img](typora.assets/a35f8fd5e9d968edfe5a0b02b54d0881.png)严格模式
+![img](../../ImageAssets/a35f8fd5e9d968edfe5a0b02b54d0881-1574167308786.png)严格模式
 
 ### 写得舒服
 
@@ -40,7 +38,7 @@ Markdown 是用来编写结构化文档的一种纯文本格式，它使我们�
 
 我认为：一个优秀的笔记应用应该给用户**选择 Markdown 语法风格的权利**。而 Typora 在这一点上是我目前见过所有 Markdown 笔记应用中做得最好的。
 
-![img](typora.assets/ea30087c6f93d0fa3c5a313c8cdce357.jpg)文本编辑设置
+![img](../../ImageAssets/ea30087c6f93d0fa3c5a313c8cdce357-1574167308787.jpg)文本编辑设置
 
 通过打开 `文件 - 偏好设置` 你会发现 Typora 为编辑体验的考虑细致到了令人叹为观止的程度。Typora 中提供了大量有关 Markdown 偏好的设置，据此，你可以构建一个几乎完全适合自己的 Markdown 编辑器。下面我将依次介绍一些与文本编辑体验有关的功能亮点。
 
@@ -57,13 +55,13 @@ Typora 的图片插入功能是广受好评的。要知道，Markdown 原生不�
 
 Typora 会自动帮你插入符合 Markdown 语法的图片语句，并给它加上标题。
 
-![img](typora.assets/1de13eae43785e27bbbcd631931fd161.png)复制图片
+![img](../../ImageAssets/1de13eae43785e27bbbcd631931fd161-1574167308792.png)复制图片
 
 你也完全可以使用图床来保证文档在分享后图片仍能正常显示。
 
 更强大的是，Typora 支持在拖动或 `Ctrl + V` 网络图片后自动将其保存到本地。你可以在 `文件 - 偏好设置 - 编辑器 - 图片插入` 中选择复制到哪个路径，什么情况下需要复制。
 
-![img](typora.assets/717da653ad91e938c5f1f40555b9c057.png)图片插入
+![img](../../ImageAssets/717da653ad91e938c5f1f40555b9c057-1574167308800.png)图片插入
 
 这一功能保证了即使网络图片源失效了，你还有本地的备份可用。同时也能使你的文档文件夹更合理、完整。
 
@@ -75,21 +73,21 @@ Typora 会自动帮你插入符合 Markdown 语法的图片语句，并给它加
 
 你可以在 `视图 - 专注模式 / 打字机模式` 中勾选使用这两个模式。
 
-![img](typora.assets/8b4e14ef732a23d4cc2a8fb1f8ec016c.gif)两种模式
+![img](../../ImageAssets/8b4e14ef732a23d4cc2a8fb1f8ec016c-1574167308909.gif)两种模式
 
 #### 实时预览
 
 我想很果断地下这个结论：到现在还不支持编辑界面实时预览的 Markdown 编辑器基本可以退出市场了。Typora 在这一方面显然已经领先了一大步——他们连 Markdown 语法的标记都在实时预览中消去了。当你离开正在编辑的有格式的文本段后，Typora 会自动隐藏 Markdown 标记，只留下**「所见即所得」**的美妙。*他们把这称为 Hybrid View。*
 
-![img](typora.assets/f99c9ce02e2728ec6c64b443947fc67e.gif)所见即所得
+![img](../../ImageAssets/f99c9ce02e2728ec6c64b443947fc67e-1574167308811.gif)所见即所得
 
 为了防止一些程序 bug 的发生（虽然在我使用下来感到是很少的）导致格式问题无法修改，Typora 保留了一个**「源代码模式」**。你可以通过 `视图 - 源代码模式` 或左下角的 `` 按钮进入。
 
-![img](typora.assets/bcda9c4e35725b7297a6b90d8745564e.gif)源代码模式
+![img](../../ImageAssets/bcda9c4e35725b7297a6b90d8745564e-1574167308816.gif)源代码模式
 
 #### 大纲 / 文件侧边栏
 
-![img](typora.assets/f2461efb5ac297facfcd9f72cc5da6be.png)侧边栏
+![img](../../ImageAssets/f2461efb5ac297facfcd9f72cc5da6be-1574167308825.png)侧边栏
 
 Typora 会根据你 Markdown 标记的 H1、H2、H3…… 各级标题为你呈现一个大纲。
 
@@ -109,7 +107,7 @@ Typora 在空格与换行部分主要是使用 [CommonMark](http://www.commonmar
 
 下附以上各空格、换行、换段的测试结果图。具体内容你可以在官网的 [这篇文档](http://support.typora.io/Line-Break/) 中查阅。
 
-![img](typora.assets/5c2fbaa53b27666a7fd0b07ac3e100bf.png)空格、换行、换段
+![img](../../ImageAssets/5c2fbaa53b27666a7fd0b07ac3e100bf-1574167308826.png)空格、换行、换段
 
 #### emoji 表情
 
@@ -118,11 +116,11 @@ Typora 在空格与换行部分主要是使用 [CommonMark](http://www.commonmar
 1. **输入法联想：**优点是比较方便，但会插入一张图片而不是一个字符，在许多情景下都不是很合适。 
 2. **复制 emoji 符号：**优点是能保证符号的形式，但显然每次用都需要去复制，比较麻烦。
 
-![img](typora.assets/b2601a694aba07b8a68615ca59bcc495.png)输入法联想
+![img](../../ImageAssets/b2601a694aba07b8a68615ca59bcc495-1574167308832.png)输入法联想
 
 在 Typora 中，你可以用 `:emoji:` 的形式来打出 emoji，软件会自动给出图形的提示，还是比较好用的。
 
-![img](typora.assets/ff26eeb5ff2d6fae16cab163ebfcd096.png)Typora 中输入 emoji
+![img](../../ImageAssets/ff26eeb5ff2d6fae16cab163ebfcd096-1574167308836.png)Typora 中输入 emoji
 
 ## 一个学术文档编辑器
 
@@ -147,7 +145,7 @@ Typora 中代码的插入也可以分为行内和块间两种：
 2. 代码块：输入 ````` 后并输入语言名，换行，开始写代码，Typora 就会自动帮你实现代码高亮。Typora 原生支持许多编程语言代码块的语法高亮，基本日常常用的编程语言它都能很好地支持。 
    除此以外，你也可以直接换行开始写，而后再选择语言。
 
-![img](typora.assets/a8c283ba4f1ba09d41331b87e2eef3b9.png)代码块
+![img](../../ImageAssets/a8c283ba4f1ba09d41331b87e2eef3b9-1574167308842.png)代码块
 
 ### 表格
 
@@ -161,7 +159,7 @@ Typora 中代码的插入也可以分为行内和块间两种：
 
 好在 Typora 为我们提供了图形界面的插入表格的功能，你只需要在行内 `鼠标右键 - 插入 - 表格` ，并输入行数和列数，Typora 就会自动生成一张样式不错的空表格。
 
-![img](typora.assets/51bf2f290592e1ddbadb95765c04f297.png)Typora 表格
+![img](../../ImageAssets/51bf2f290592e1ddbadb95765c04f297-1574167308847.png)Typora 表格
 
 ### 链接引用与脚注
 
@@ -169,7 +167,7 @@ Typora 中代码的插入也可以分为行内和块间两种：
 
 **脚注**在少数派的文章中也很常见，即某段话结尾右上角标有数字标记，页面底部进行注释的写法。你可以在需要插入脚注标号的位置写 `[^ number ]` ，再在下方通过 `[^ number ]:` 在文档中插入脚注。注意不要遗漏了脚注编号 `number` 前后的空格。
 
-![img](typora.assets/5f82606e6d89fe1eb24705c4ca6b895d.png)链接引用和脚注
+![img](../../ImageAssets/5f82606e6d89fe1eb24705c4ca6b895d-1574167308853.png)链接引用和脚注
 
 ### 文件系统
 
@@ -180,13 +178,13 @@ Typora 中代码的插入也可以分为行内和块间两种：
 - **导入：**Typora 支持非常多的文件格式：.docx, .latex, .tex, .ltx, .rst, .rest, .org, .wiki, .dokuwiki, .textile, .opml, .epub。
 - **导出：**Typora 原生支持导出 PDF，HTML等格式。你可以根据软件内提示安装 **Pandoc 插件**来导出更多例如 docx，LaTeX 等格式。 
 
-![img](typora.assets/ba295f21f0b71646bb36a0517e868ced.png)导出
+![img](../../ImageAssets/ba295f21f0b71646bb36a0517e868ced-1574167308864.png)导出
 
 ## 一个伪装成文本编辑器的浏览器
 
 当我的一个朋友问我「Typora 有什么好写的？」时，我回答「Typora 是一个伪装成文本编辑器的浏览器」。是的，事实上如果你有一定的计算机基础，你可以找到许多有关于「Typora 其实是一个浏览器」的蛛丝马迹。
 
-![img](typora.assets/13837bcdcded9ae406e8c4aac5f2d752.png)图片插入
+![img](../../ImageAssets/13837bcdcded9ae406e8c4aac5f2d752-1574167308870.png)图片插入
 
 在图片插入的选项中，Typora 用了「复制图片到 ./${filename}.assets 文件夹」的说法，而这其实是网页前端常用的 Javascript 字符串模板语法的风格。
 
@@ -194,7 +192,7 @@ Typora 中代码的插入也可以分为行内和块间两种：
 
 当然，最明显的一点是当你按下 `Shift + F12` 快捷键时，页面会弹出一个基于 Chrome 的开发者工具栏，也就是我们在浏览器中常说的「审查元素」。
 
-![img](typora.assets/da8c9b305a222cb5fadb41c12da81a12.png)审查元素
+![img](../../ImageAssets/da8c9b305a222cb5fadb41c12da81a12-1574167308886.png)审查元素
 
 ### 伪装从何而来？
 
@@ -212,13 +210,13 @@ HTML 是一种标记语言，主要负责构成网页的骨架，它包含所有
 
 你可以把一张网页想象成一幅数字油画，HTML 就是那个黑白线条的底，上面写满了数字标记，示意你哪一块区域要涂什么颜色。而 CSS 则负责在对应的区域涂上颜色，甚至加上一些装饰等。
 
-![img](typora.assets/7ce3d9ed245eed902e833405b9464103.jpg)数字油画
+![img](../../ImageAssets/7ce3d9ed245eed902e833405b9464103-1574167308889.jpg)数字油画
 
 #### HTML 标签
 
 Typora 支持许多常用的 HTML 标签，如果你了解 HTML 语法的话，你可以写出十分美观丰富的文档页面。
 
-![img](typora.assets/89bba4dfdfb49b8d3c129ce1157a54b1.png)HTML 标签
+![img](../../ImageAssets/89bba4dfdfb49b8d3c129ce1157a54b1-1574167308894.png)HTML 标签
 
 事实上你可以在 Typora 中完成许多基本的 HTML 风格的文本输入，例如 HTML 字符、HTML 块、HTML 风格的注释，甚至是视频和音频。具体支持的功能和限制请在 [官方文档](http://support.typora.io/HTML/) 中查阅。
 
@@ -230,7 +228,7 @@ Typora 原生支持将文档导出为 HTML 格式的文件，并选择是否要�
 
 除此之外，由于其本身「浏览器」的属性，你可以直接在实时预览界面用 `Ctrl +C` 复制到 HTML 代码。一个实用的用处是将这些 HTML 代码直接 `Ctrl + V` 黏贴到微信公众号后台，基本可以保证两边显示效果相同。这一点不仅使公众号推送可以有更自由、美观的样式，也让编辑、排版更轻松了。（由于微信自带浏览器的一些特性，可能有少部分 CSS style 不能生效，建议多多校对。）
 
-![img](typora.assets/3d818c18934632b043fcf4ad9be1d046.png)公众号
+![img](../../ImageAssets/3d818c18934632b043fcf4ad9be1d046-1574167308900.png)公众号
 
 具体如何用 Typora 完成公众号写作，你可以在 [这篇文章](https://sspai.com/post/40524) 中进一步了解。
 
@@ -238,17 +236,17 @@ Typora 原生支持将文档导出为 HTML 格式的文件，并选择是否要�
 
 为了让文档更美观，我们可以为其加上 CSS style。我认为 Typora 对 CSS 的支持让它成为一众桌面笔记应用中最与众不同的一个。在 Typora 中 CSS 被称为「主题」，但其本质仍是 CSS 文件。你可以在 `文件 - 偏好设置 - 主题 - 打开主题文件夹` 看到这些 CSS 文件。
 
-![img](typora.assets/7d3cfbc92721733e16ed63d72a48a572.png)主题
+![img](../../ImageAssets/7d3cfbc92721733e16ed63d72a48a572-1574167308906.png)主题
 
-![img](typora.assets/98a04c4f9129e0f018d15bc790b376c2.png)主题文件夹
+![img](../../ImageAssets/98a04c4f9129e0f018d15bc790b376c2-1574167308910.png)主题文件夹
 
 选择不同的主题可以使文档拥有不同的外观，但不会影响内容。Typora 自带了若干主题，你也可以在 [官网](http://theme.typora.io/) 下载更多的主题。
 
-![img](typora.assets/efcf65ba993c4bb0b058d6eb8258df6f.png)主题商店
+![img](../../ImageAssets/efcf65ba993c4bb0b058d6eb8258df6f-1574167308916.png)主题商店
 
 除此以外，如果你有一定的 Web 编程基础，你当然也可以自己修改、新建适合你使用需求的 CSS 文件。我自己就写了一份名为 WeChat 的 CSS 文件，来符合我公众号特定的排版需求，例如正文是 15px，页边距是 8，小标题是 18px 等等。
 
-![img](typora.assets/317ac1df25fcfc817c03f92d6086764e.png)CSS 文件
+![img](../../ImageAssets/317ac1df25fcfc817c03f92d6086764e-1574167308922.png)CSS 文件
 
 使用 Typora 的「主题」功能写公众号的一个好处是，只需要每次都套用同样的主题，我们就可以在保证每次排版规范都相同的同时，节省许多重复的工作。
 

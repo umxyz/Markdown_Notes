@@ -8,13 +8,13 @@
 
 二、github上生成gist
 
-  <img src="Settings sync.assets/721708-20190903224302155-1205228973.png" alt="img" style="zoom: 50%;" />
+  <img src="../../../../ImageAssets/721708-20190903224302155-1205228973.png" alt="img" style="zoom: 50%;" />
 
  
 
  进入 your gists
 
-<img src="Settings sync.assets/721708-20190903224517167-489227153.png" alt="img" style="zoom: 25%;" />
+<img src="../../../../ImageAssets/721708-20190903224517167-489227153.png" alt="img" style="zoom: 25%;" />
 
  
 
@@ -22,7 +22,7 @@
 
 随便给自己的gist起个名，添加内容，然后"Create secret gist"
 
-![img](Settings sync.assets/721708-20190903224919255-1177444821.png)
+![img](../../../../ImageAssets/721708-20190903224919255-1177444821.png)
 
  
 
@@ -42,13 +42,13 @@
 
 ​    4、出现下面的设置界面
 
-<img src="Settings sync.assets/721708-20190903225519768-1672222380.png" alt="img" style="zoom:50%;" />
+<img src="../../../../ImageAsset/721708-20190903225519768-1672222380.png" alt="img" style="zoom:50%;" />
 
  
 
  其中的Gist ID 就是我们上面获取的Gist ID，令牌就是其他教程里（如下图）生成的token
 
-<img src="Settings sync.assets/721708-20190903225845960-1996877977.png" alt="img" style="zoom:50%;" />
+<img src="../../../../ImageAssets/721708-20190903225845960-1996877977.png" alt="img" style="zoom:50%;" />
 
  
 

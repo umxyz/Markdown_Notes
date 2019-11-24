@@ -9,7 +9,7 @@ ll lcm(ll x, ll y)	//最小公倍数
 }
 ```
 
- 
+ ![IMG_2176](../../ImageAssets/IMG_2176.JPG)
 
 # C 语言实例 - 字符串排序
 

@@ -171,3 +171,15 @@ ssh-add ~/.ssh/id_rsa1
 这个过程很简单，我简略写一下。依次进入settings–>ssh keys–>add ssh key 然后把你的公钥添加进这里就ok了。
 
 找了许多解决方法都搞不定，最终还是按照github 官方的流程走通了。git 不是linux的亲儿子么，怎么在linux配置比其他平台还麻烦,不得不吐槽啊。。
+
+### 6.warning: LF will be replaced by CRLF in whitelist.pac.
+
+​	The file will have its original line endings in your working directory
+
+在Unix系统中，行尾用换行（LF）表示。在窗口中，用回车（CR）和换行（LF）（CRLF）表示一行。当您从unix系统上载的git中获取代码时，它们将只有LF。
+
+如果您是在Windows机器上工作的单个开发人员，并且不关心git自动将LF替换为CRLF，则可以通过在git命令行中键入以下内容来关闭此警告
+
+```
+git config core.autocrlf true
+```

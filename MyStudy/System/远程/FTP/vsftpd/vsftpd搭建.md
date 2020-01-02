@@ -166,7 +166,7 @@ hide_ids=YES
 #
 # Limit the range of ports that can be used for passive FTP
 pasv_min_port=40000
-pasv_max_port=50000
+pasv_max_port=40200
 ```
 
 或配置文件
@@ -346,7 +346,7 @@ hide_ids=YES
 #
 # Limit the range of ports that can be used for passive FTP
 pasv_min_port=40000
-pasv_max_port=50000
+pasv_max_port=40200
 
 pasv_enable=Yes
 

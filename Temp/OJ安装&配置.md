@@ -11,9 +11,10 @@ cd jnoj
 chmod 777 * -R
 #LNMP 依赖服务安装
 sudo apt install nginx -y
-nano /etc/nginx/nginx.conf
+#wsl必须
+#nano /etc/nginx/nginx.conf
 #在 nginx.conf 的 http 节点添加：
-fastcgi_buffering off;
+#fastcgi_buffering off;
 sudo apt install mysql-server mysql-client
 #找到字段“bind-address = 127.0.0.1”，将其注释掉
 nano /etc/mysql/mysql.conf.d/mysqld.cnf

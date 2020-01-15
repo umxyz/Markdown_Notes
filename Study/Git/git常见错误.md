@@ -165,7 +165,7 @@ ssh-agent -s1
 ssh-add ~/.ssh/id_rsa1
 ```
 
-1. cat ~/.ssh/id_rsa.pub
+1. `cat ~/.ssh/id_rsa.pub`
 2. 把公钥添加到自己的github
 
 这个过程很简单，我简略写一下。依次进入settings–>ssh keys–>add ssh key 然后把你的公钥添加进这里就ok了。

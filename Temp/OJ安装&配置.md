@@ -1,3 +1,6 @@
+`apt-get remove dnsmasq --purge && apt-get autoremove --purge && apt-get clean`
+
+
 ```shell
 sudo apt-get update
 #sudo apt-get upgrade
@@ -67,9 +70,13 @@ service vsftpd start
 service mysql start
 service php7.2-fpm start
 service nginx start
-#ftp服务器挂载
+#f硬盘挂载
+sudo umount /dev/sdb1 /home/disk1
+sudo umount /dev/sdc1 /home/disk2
+sudo umount /dev/sdd1 /home/disk3
 sudo mount /dev/sdb1 /home/disk1
 sudo mount /dev/sdc1 /home/disk2
+sudo mount /dev/sdd1 /home/disk3
 cd /home/judge/jnoj
 cd judge
 # 运行 OI 模式的判题机进程，请使用 sudo ./dispatcher -o

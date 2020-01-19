@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/shi-yang/jnoj/master/docs/install.sh
 sudo useradd -m -u 1536 judge
 #git clone https://github.com/shi-yang/jnoj.git
 自己复制备份的oj文件夹过去
-cd jnoj
+cd judge/jnoj
 chmod 777 * -R
 #LNMP 依赖服务安装
 sudo apt install nginx -y
@@ -18,12 +18,13 @@ sudo apt install nginx -y
 #nano /etc/nginx/nginx.conf
 #在 nginx.conf 的 http 节点添加：
 #fastcgi_buffering off;
+#service nginx restart
 sudo apt install mysql-server mysql-client
-#找到字段“bind-address = 127.0.0.1”，将其注释掉
 nano /etc/mysql/mysql.conf.d/mysqld.cnf
+#找到字段“bind-address = 127.0.0.1”，将其注释掉
 service mysql restart
-#密码在 /etc/mysql/debian.cnf
 mysql -u debian-sys-maint -p
+#密码在 /etc/mysql/debian.cnf
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'acmlab507';
 quit;
 mysql -u root -p
@@ -38,8 +39,10 @@ sudo apt install make
 sudo apt install gcc
 sudo apt install g++
 sudo apt install openjdk-11-jdk
+cd /home
 sudo bash install.sh
 # 数据库迁移工具，用于更新数据库的变化情况
+cd /home/judge/jnoj
 ./yii migrate
 # 清空缓存文件
 sudo rm -rf runtime/*

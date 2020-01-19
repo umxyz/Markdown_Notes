@@ -183,3 +183,33 @@ ssh-add ~/.ssh/id_rsa1
 ```
 git config core.autocrlf true
 ```
+
+
+
+### 7.warning: LF will be replaced by CRLF in whitelist.pac.
+
+**解决办法**：错误信息中可以看出本地和远程匹配不完整, 在网上也查找了下, 总结为本地仓库和远程仓库有冲突所致 .
+
+总结的几种解决办法:
+
+1: 进行push前先将远程仓库pull到本地仓库
+
+```shell
+git pull origin master    #git pull --rebase origin master
+git push -u origin master
+```
+
+2: 强制push本地仓库到远程 (这种情况不会进行merge, 强制push后远程文件可能会丢失 不建议使用此方法)
+
+```shell
+git push -u origin master -f
+```
+
+3: 避开解决冲突, 将本地文件暂时提交到远程新建的分支中
+
+```shell
+git branch [name]
+# 创建完branch后, 再进行push
+git push -u origin [name]
+```
+

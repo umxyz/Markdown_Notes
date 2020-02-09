@@ -231,3 +231,12 @@ git config --global user.name "XXXXXX" （设置你的用户名）
 ```
 
 重新提交
+
+
+
+### 9.Host key verification failed
+
+```shell
+ssh -t git@github.com
+```
+

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-02-23 Sun 14:52 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>翻墙教程</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Tom" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://rgb-24bit.github.io/org-html-theme-list/org-guidao/style/main.css"/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">翻墙教程</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgc2356b7">1. 翻墙</a>
+<ul>
+<li><a href="#orgf778ca0">1.1. 获取免费节点</a>
+<ul>
+<li><a href="#orge19d202">1.1.1. ShadowsocksRRShare</a></li>
+<li><a href="#org9c5021d">1.1.2. 放牧的风</a></li>
+<li><a href="#org0898b75">1.1.3. 关于节点安全</a></li>
+</ul>
+</li>
+<li><a href="#org6297cd3">1.2. SSR 客户端使用方法</a>
+<ul>
+<li><a href="#org46e563e">1.2.1. Android</a></li>
+<li><a href="#orge61d31a">1.2.2. Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org7e74300">2. 其他</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc2356b7" class="outline-2">
+<h2 id="orgc2356b7"><span class="section-number-2">1</span> 翻墙</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+首先说明一些我的政治立场，我反对共产党，所以五毛、小粉红，我没办法不让你们看这个教程，但是还是对你们说一句：滚远一点！别TM翻出来爱国了！
+</p>
+
+<p>
+一些翻墙注意事项写在前面：
+</p>
+<ol class="org-ol">
+<li>翻墙上网请一定不要使用任何国产浏览器，请使用 <a href="https://www.google.com/intl/zh-CN/chrome/">Chrome</a> 或  <a href="https://www.mozilla.org/zh-CN/firefox/new/">FireFox</a> 浏览器，FireFox 一定不要在 <a href="http://www.firefox.com.cn/">http://www.firefox.com.cn/</a> 下载，这是 FireFox 中国特供版。</li>
+<li>一定不要使用任何国产输入法，不管是在手机上还是电脑上。Android 可以使用 Gboard 输入法，win10/macOS/IOS 的自带输入法都很好用。</li>
+<li>请一定不要在墙外泄露自己的个人信息。</li>
+<li>如果是国产 Android 手机，特别是华为，请一定考虑清楚要不要用它来翻墙。</li>
+<li>如果有条件，有两个手机，可以将其中一个专门用于翻墙，最好不要是国产手机，如果是国产手机，会刷机更好，推荐刷一个干净的 Android 原生系统，并且不要安装任何的国产 app 。</li>
+<li>电脑翻墙，可以用虚拟机＋洋葱浏览器来翻墙。</li>
+</ol>
+
+<p>
+以上 5 、6 条是针对身份敏感和动手能力强的网友的建议，一般网友请至少遵守前 4 条注意事项。
+</p>
+</div>
+
+<div id="outline-container-orgf778ca0" class="outline-3">
+<h3 id="orgf778ca0"><span class="section-number-3">1.1</span> 获取免费节点</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+翻墙的方式有几种，主要有 vpn 、ss 、 ssr 、 v2ray 这些，ssr 是在 ss 基础上开发的翻墙软件，想了解翻墙史的朋友可以在成功翻墙后，看一看这篇文章 <a href="https://chinadigitaltimes.net/chinese/2020/01/matters%ef%bd%9c%e9%81%93%e9%ab%98%e4%b8%80%e5%b0%ba%ef%bc%8c%e9%ad%94%e9%ab%98%e4%b8%80%e4%b8%88%ef%bc%9a%e4%b8%ad%e5%9b%bd%e4%ba%ba%e4%b8%8e%e9%98%b2%e7%81%ab%e9%95%bf%e5%9f%8e%e7%9a%84%e6%96%97/">道高一尺，魔高一丈：中国人与防火长城的斗争</a>。
+</p>
+
+<p>
+在介绍翻墙软件之前，先来分享一下哪里能获取到免费的节点，因为我的教程是教大家使用目前主流的 SSR 翻墙，SSR 翻墙需要用到节点，每个节点对应一个代理服务器，目前很多机场都是用 SS/SSR 技术来翻墙，但是机场的节点都是要钱的，我并不是说要钱的不好，主要是我希望用最低的成本和简单的方式帮助大家翻墙，我自己就是花钱用的机场，这里我不会给机场打广告，关于这些免费节点，是我应急用的，速度不快，想白嫖看视频，体验不会很好，也不稳定，所以大家可以再翻墙之后，可以尝试去找其他稳定的梯子，当然如果只是随便看看网页，上一下 TG ，体验一下在墙外的感觉，免费的节点也够用了。重度用户还是建议花钱买更好的服务。
+</p>
+</div>
+
+<div id="outline-container-orge19d202" class="outline-4">
+<h4 id="orge19d202"><span class="section-number-4">1.1.1</span> ShadowsocksRRShare</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+<a href="https://github.com/ruanfei/ShadowsocksRRShare">ShadowsocksRRShare</a>是 GitHub 上的一个节点分享项目，资源搬运于 tg 频道  <a href="https://t.me/ssrList">ssrList</a> 、  <a href="https://t.me/ssList">ssList</a> 、<a href="https://t.me/V2List">V2List</a> 。 还提供各个平台的 ss/ssr/v2ray 客户端下载。 
+</p>
+
+<p>
+有些地区 GitHub 被墙，如新疆，可以跳过这一段，本教程会提供 SSR 软件和今天（2020-2-22）收集到的节点，直接看 <a href="#org6297cd3">SSR 客户端使用方法</a>，如果时间久，节点都失效，则从<a href="#org9c5021d">放牧的风</a>开始看。
+由于 GFW 会精准的墙掉一些 GitHub 上的项目，比如著名的 <a href="https://github.com/programthink/zhao">zhao</a> ，墙内就是访问不了的， 如果其他地区也不能打开这个项目了，也从<a href="#org9c5021d">放牧的风</a>开始看。
+</p>
+
+<p>
+进入 <a href="https://github.com/ruanfei/ShadowsocksRRShare">ShadowsocksRRShare</a> ，可以看到如下图所示，
+<img src="./imgs/2020-02-22-14-15-19.jpg" alt="2020-02-22-14-15-19.jpg" />
+我们进入 ssr 文件夹，可以看到历史节点文件，翻到最下面找到最近更新的节点文件
+<img src="./imgs/2020-02-22-14-22-42.jpg" alt="2020-02-22-14-22-42.jpg" />
+点开这个节点文件，复制其中的内容，
+<img src="./imgs/2020-02-22-14-26-37.jpg" alt="2020-02-22-14-26-37.jpg" />
+新建一个 txt 文件，保存这些节点，我们就获得了这些节点，接下来可以直接跳到这里 <a href="#org6297cd3">SSR 客户端使用方法</a> 。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9c5021d" class="outline-4">
+<h4 id="org9c5021d"><span class="section-number-4">1.1.2</span> 放牧的风</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+<a href="https://www.youneed.win/free-ssr">youneed.win</a> 这个网站有提供 ss/ssr/v2ray 的免费节点，不过网站被屏蔽了，屏蔽方式是域名DNS污染，不能直接访问，需要修改 host 文件，
+<img src="./imgs/2020-02-21-16-51-55.jpg" alt="2020-02-21-16-51-55.jpg" />
+</p>
+<ul class="org-ul">
+<li>继续访问主域名www.youneed.win方法：
+<ol class="org-ol">
+<li>目录：C:/Windows/System32/drivers/etc，用记事本打开host文件</li>
+<li>在最后添加并保存：104.31.74.55  youneed.win</li>
+<li>在最后添加并保存：104.31.74.55  www.youneed.win</li>
+<li>进入命令行(win+R 输入cmd回车)，执行：ipconfig /flushdns</li>
+<li>重新刷新页面即可，如失效请还原host并用代理访问，或继续访问临时域名</li>
+</ol></li>
+</ul>
+
+<p>
+以上是站长给出的解决方案。
+</p>
+
+<p>
+网站上去之后，下图红框中的部分，就是网站提供的免费节点了。
+<img src="./imgs/2020-02-21-19-11-01.jpg" alt="2020-02-21-19-11-01.jpg" />
+</p>
+
+<p>
+这里我们点击 SSR 帐号进入 SSR 节点的分享页面，进入后会让你输入验证码，输入后就可以看到节点了，如下图就是部分节点信息
+<img src="./imgs/2020-02-21-19-14-02.jpg" alt="2020-02-21-19-14-02.jpg" />
+</p>
+
+<p>
+那么如何获取这些节点呢，需要按照以下步骤操作：
+</p>
+
+<p>
+手动或者使用快捷键F12 打开浏览器开发者工具，切换到控制台(Console)，执行图中第五步的代码。
+<img src="./imgs/2020-02-22-14-47-14.jpg" alt="2020-02-22-14-47-14.jpg" />
+代码如下（注意是在 SSR账号页面下执行，不是 SS 账号，也不是 V2Ray）：
+</p>
+<div class="org-src-container">
+<pre class="src src-javascript"><span style="color: #e45649;">var</span> <span style="color: #6a1868;">ssrArray</span>=<span style="color: #4078f2;">[]</span>;
+<span style="color: #4078f2;">[]</span>.forEach.call<span style="color: #4078f2;">(</span>document.querySelectorAll<span style="color: #a626a4;">(</span><span style="color: #50a14f;">"#post-box tbody tr a"</span><span style="color: #a626a4;">)</span>,<span style="color: #e45649;">function</span><span style="color: #a626a4;">(</span><span style="color: #6a1868;">a</span><span style="color: #a626a4;">){</span>
+    ssrArray.push<span style="color: #50a14f;">(</span>a.getAttribute<span style="color: #da8548;">(</span><span style="color: #50a14f;">"data"</span><span style="color: #da8548;">)</span><span style="color: #50a14f;">)</span>
+<span style="color: #a626a4;">}</span><span style="color: #4078f2;">)</span>;
+<span style="color: #e45649;">var</span> <span style="color: #6a1868;">linkTotal</span>=ssrArray.join<span style="color: #4078f2;">(</span><span style="color: #50a14f;">'\n'</span><span style="color: #4078f2;">)</span>;
+console.log<span style="color: #4078f2;">(</span>linkTotal<span style="color: #4078f2;">)</span>;
+</pre>
+</div>
+<p>
+执行后，鼠标点击如图中的 copy 按钮，复制所有节点
+<img src="./imgs/2020-02-21-23-44-02.jpg" alt="2020-02-21-23-44-02.jpg" />
+然后新建一个文件保存这些节点，
+<img src="./imgs/2020-02-21-23-48-06.jpg" alt="2020-02-21-23-48-06.jpg" />
+</p>
+
+<p>
+到这就算获得了这些节点，可能会有人觉的这部份有点复杂，但是这是必要的操作，不然到客户端设置的时候，需要你一个个的手写参数，那就更麻烦。
+</p>
+
+<p>
+当然还有更方便的方法获取这些节点，使用 <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=zh-CN">Tampermonkey</a> 插件，安装 <a href="https://greasyfork.org/sr/scripts/385723-%E6%94%BE%E7%89%A7%E7%9A%84%E9%A3%8E%E5%85%8D%E8%B4%B9ssr%E8%8E%B7%E5%8F%96%E6%89%80%E6%9C%89%E9%93%BE%E6%8E%A5">这个</a> 脚本，刷新页面，然后在 SSR 账号页面右下角就会直接有一个 copy 按钮，不过考虑的到下载 chrome 插件需要翻墙，所以实际操作起来可能会更麻烦，翻墙后，可以尝试我上面提到的方法。
+</p>
+
+<p>
+软件使用方法中会介绍如何使用这些节点。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0898b75" class="outline-4">
+<h4 id="org0898b75"><span class="section-number-4">1.1.3</span> 关于节点安全</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<p>
+这里声明一下，我并不能保证这些节点都是安全的，我不认识站长，我也不知道那些节点是从哪找来的，包括我自己花钱的机场，我也不能保证机场绝对不是钓鱼机场，不管你花钱还是用免费的，大家都是有一定风险的，所以如果你决定要翻墙出来，那么请一定要保护好自己的个人信息。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6297cd3" class="outline-3">
+<h3 id="org6297cd3"><span class="section-number-3">1.2</span> SSR 客户端使用方法</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+我主要写 windows 和 Android 的 SSR 如何使用，IOS 比较麻烦，需要用美服账户购买 Shadowrocket ，我这里没有条件操作，就不讲了，
+至于 macOS/Linux 用户，翻墙都是基本操作，我这里也就不多说什么了。
+</p>
+
+<p>
+本教程会提供 Android 和 win 的 SSR 客户端和节点文件，给上不去 GitHub 的朋友使用，SSR 客户端在 app 文件夹下，Android 的 apk 文件，直接安装即可，win 的是一个压缩包，解压后直接使用，无需安装。
+</p>
+
+<p>
+也提供项目源地址供大家亲自下载：
+</p>
+<ul class="org-ul">
+<li>win : <a href="https://github.com/shadowsocksrr/shadowsocksr-csharp/releases">shadowsocksr-csharp</a></li>
+<li>Android : <a href="https://github.com/shadowsocksrr/shadowsocksr-android/releases">shadowsocksr-android</a></li>
+</ul>
+
+<p>
+节点文件在 nodes 文件夹下， <b>节点文件时效性很强，也许明天就用不了了</b> ，所以，如果这些节点都用不了 , 需要跟着 <a href="#orgf778ca0">1.1</a> 进行操作。
+</p>
+</div>
+
+<div id="outline-container-org46e563e" class="outline-4">
+<h4 id="org46e563e"><span class="section-number-4">1.2.1</span> Android</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+Android 的 SSR 客户端非常多，这里我是用 <a href="https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.4/shadowsocksr-android-3.5.4.apk">SSRR</a> 来举例。
+</p>
+
+<p>
+首先我们需要把之前的节点文件发送到手机上，如果有其他办法，不要用 QQ 或者微信之类的国产 app 来接收/发送这些文件，可以连接数据线传输，如果非要用 QQ 或微信来接收/发送节点文件，可以压缩加密后再发送到 QQ 。
+</p>
+
+<p>
+接收到文件后，打开文件，全选，复制文件的所有内容。
+</p>
+
+<p>
+打开 SSRR ，点击顶部的 shadowsocksr R ，进入配置文件，点击右下角的 ＋ 按钮，再点击 <code>从剪切版导入</code> 按钮，没问题的话，到这就成功导入节点到 SSRR 了，然后就是测速，筛选掉不能用的节点，选择可用的节点，启用节点，然后就可以翻墙了。
+<img src="./imgs/Slice 1.png" alt="Slice 1.png" />
+<img src="./imgs/Slice 1 2.png" alt="Slice 1 2.png" />
+<img src="./imgs/Slice 1 3.png" alt="Slice 1 3.png" />
+</p>
+
+<p>
+本教程不会讲关于 SSRR 的高级设置选项，如路由、分应用代理等设置，这会增加教程的复杂度，所以使用的是 SSRR 默认的全局路由，如果有人想对 SSRR 的设置选项有更深入的了解，可以过墙后，自行搜索学习。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge61d31a" class="outline-4">
+<h4 id="orge61d31a"><span class="section-number-4">1.2.2</span> Windows</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<p>
+Win 的 SSR 客户端也非常多，这里我用到的是  <a href="https://github.com/shadowsocksrr/shadowsocksr-csharp/releases">shadowsocksr-csharp</a>
+</p>
+
+<p>
+首先解压 shadowsocksr-csharp 的压缩包，
+<img src="./imgs/1.png" alt="1.png" />
+接下来启动 shadowsocksr ，
+<img src="./imgs/2.png" alt="2.png" />
+全选复制节点文件中的内容，
+<img src="./imgs/3.png" alt="3.png" />
+右键小飞机，从剪切版批量导入节点，
+<img src="./imgs/4.png" alt="4.png" />
+选择可用的节点，需要亲自尝试，打不开 google 就换一个节点
+<img src="./imgs/5.png" alt="5.png" />
+最后，成功打开 google ，翻墙成功。
+<img src="./imgs/6.png" alt="6.png" />
+值得注意的是，如果 shadowsocksr 异常退出，可能会导致浏览器上不了网，所以不用翻墙时，请右键小飞机，手动退出 shadowsocksr 。
+</p>
+
+<p>
+如果已经上不了网了，请打开 Internet 属性，查看图中标 4 的位置，查看代理服务器是否被打 ✅️ ，如果打 ✅️ ，请把这个 ✅️ 去掉，
+如果没有勾选，那么应该是其他原因导致不能上网，请自行搜索解决。
+<img src="./imgs/7.png" alt="7.png" />
+</p>
+
+<p>
+同样，这里我也不会介绍 shadowsocksrr-csharp 的高级设置选项，如果想了解高级设置，这里我分享一篇文章，翻墙后可以浏览
+<a href="https://www.quchao.net/ShadowsocksR.html">ShadowSocksR(SSR)功能详细介绍及使用教程</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7e74300" class="outline-2">
+<h2 id="org7e74300"><span class="section-number-2">2</span> 其他</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+如果你想将此教程分享给其他墙内网友进行翻墙，那么请根据 <a href="#orgf778ca0">获取免费节点</a> 将 nodes 文件夹内的节点文件替换成当天最新的，或者你有自己的节点，并且愿意分享出去，也将自己的节点文件放在 nodes 文件夹内，有了最新的节点文件，就可以直接从 <a href="#org6297cd3">SSR 客户端使用方法</a> 开始操作了。
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

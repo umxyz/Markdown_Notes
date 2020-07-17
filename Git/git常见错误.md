@@ -1,8 +1,8 @@
 [TOC]
 
-## 0x00 Git常见错误与操作
+# Git常见错误与操作
 
-### **1. 出现错误 error:src refspec master does not match any**
+## **1. 出现错误 error:src refspec master does not match any**
 
 原因分析：
 
@@ -56,7 +56,7 @@ git push origin master
 
 
 
-### 2. 如果输入$ git remoteadd origin [**git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git**](mailto:git@github.com:djqiang/gitdemo.git) 
+## 2. 如果输入$ git remoteadd origin [**git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git**](mailto:git@github.com:djqiang/gitdemo.git) 
 
   **提示出错信息：fatal: remoteorigin already exists.**
 
@@ -74,7 +74,7 @@ git push origin master
 
 
 
-### 3. 如果输入$ ssh -T[**git@github.com**](mailto:git@github.com)
+## 3. 如果输入$ ssh -T[**git@github.com**](mailto:git@github.com)
 
   出现错误提示：Permissiondenied (publickey).因为新生成的key不能加入ssh就会导致连接不上github。**
 
@@ -88,7 +88,7 @@ git push origin master
 
  
 
-### 4. 如果输入$ git push origin master
+## 4. 如果输入$ git push origin master
 
   **提示出错信息：error:failedto push som refs to .......**
 
@@ -105,7 +105,7 @@ git push origin master
 
 
 
-### 5. Permission denied (publickey)
+## 5. Permission denied (publickey)
 
  https://help.github.com/cn/articles/error-permission-denied-publickey 
 
@@ -125,7 +125,7 @@ git push origin master
 
 出现这个错误很显然是ssh key的问题。我们只需要跟github官方的配置ssh的流程走一遍就行了。 考虑到一些童鞋看不懂，俺还是把流程描述一遍(当年俺也是不懂英文，没 有中文资料那个痛苦啊…)。
 
-#### 1.生成SSH Keys
+### 1.生成SSH Keys
 
 如果已经生存了ssh key,那就可以跳过这一步了。可以用以下命令查看
 ls -l ~/.ssh
@@ -149,7 +149,7 @@ Your identification has been saved in /Users/you/.ssh/id_rsa.
 Your identification has been saved in /Users/you/.ssh/id_rsa.123456789
 ```
 
-#### 2.Key 添加到ssh-agent
+### 2.Key 添加到ssh-agent
 
 ssh-agent 貌似是对解密的专用密钥进行高速缓存。在windows 没有这一步，linux还需要手动添加到ssh-agent。首先确定ssh-agent是否启用
 
@@ -172,7 +172,7 @@ ssh-add ~/.ssh/id_rsa1
 
 找了许多解决方法都搞不定，最终还是按照github 官方的流程走通了。git 不是linux的亲儿子么，怎么在linux配置比其他平台还麻烦,不得不吐槽啊。。
 
-### 6.warning: LF will be replaced by CRLF in whitelist.pac.
+## 6.warning: LF will be replaced by CRLF in whitelist.pac.
 
 ​	The file will have its original line endings in your working directory
 
@@ -186,7 +186,7 @@ git config core.autocrlf true
 
 
 
-### 7.
+### 7. error: failed to push some refs to 'https://github.com/xxxx.git'
 
 **解决办法**：错误信息中可以看出本地和远程匹配不完整, 在网上也查找了下, 总结为本地仓库和远程仓库有冲突所致 .
 
@@ -215,7 +215,7 @@ git push -u origin [name]
 
 
 
-### 8. failed to execute git
+## 8. failed to execute git
 
 在vscoad中选择全部提交时候提示 Git:failed to execute git
 
@@ -226,15 +226,15 @@ git push -u origin [name]
 设置user.email和user.name
 
 ```shell
-git config --global user.email "XXXXXX.com" （XXXXXX为你的邮箱）
-git config --global user.name "XXXXXX" （设置你的用户名）
+git config --global user.email "229781766@qq.com"
+git config --global user.name "yuuxeun"
 ```
 
 重新提交
 
 
 
-### 9.Host key verification failed
+## 9.Host key verification failed
 
 ```shell
 ssh -t git@github.com

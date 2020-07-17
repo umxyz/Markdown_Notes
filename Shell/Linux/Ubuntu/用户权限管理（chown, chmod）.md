@@ -1,6 +1,6 @@
 
 
-[TOC]
+
 
 # Ubuntu用户权限管理（chown, chmod）
 

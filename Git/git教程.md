@@ -1,9 +1,9 @@
 [TOC]
-```
+```shell
 git init
 git add .
 git commit -m "sync"
-git remote add origin https://github.com/yuuxeun/HUNAU_ACM_OJ
+git remote add origin https://github.com/用户名/仓库名
 git push -u origin master
 ```
 
@@ -117,3 +117,96 @@ $ git clone git://github.com/schacon/grit.git mygrit
 唯一的差别就是，现在新建的目录成了 `mygrit`，其他的都和上边的一样。
 
 Git 支持许多数据传输协议。之前的例子使用的是 `git://` 协议，不过你也可以用 `http(s)://` 或者 `user@server:/path.git` 表示的 SSH 传输协议。我们会在第四章详细介绍所有这些协议在服务器端该如何配置使用，以及各种方式之间的利弊。
+
+
+
+## git 初始化相关操作
+
+你在安装 Git 之后想要做的第一件事是告诉它你的名字和邮箱，个性化一些默认设置。一般初始的设置过程看上去是这样的：
+
+ `git config --list `
+
+```shell
+# 告诉Git你是谁
+
+git config --global user.name "yuuxeun"
+
+git config --global user.email xxx@xx.com
+
+# 选择你喜欢的文本编辑器
+
+git config --global core.editor vim
+
+# 添加一些快捷方式(别名)
+
+git config --global alias.st status
+
+git config --global alias.co checkout
+
+git config --global alias.br branch
+
+git config --global alias.up rebase
+
+git config --global alias.ci commit
+```
+
+
+
+
+
+## git commit
+
+```shell
+git add hello.py
+git commit
+```
+
+它会打开一个文件编辑器（可以通过 git config 设置) 询问提交信息，同时列出将被提交的文件。
+
+```bash
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+# (use "git reset HEAD <file>..." to unstage)
+#
+#modified: hello.py
+```
+
+Git 对提交信息没有特定的格式限制，但约定俗成的格式是：在第一行用 50 个以内的字符总结这个提交，留一空行，然后详细阐述具体的更改。比如：
+
+```shell
+Change the message displayed by hello.py
+
+- Update the sayHello() function to output the user's name
+- Change the sayGoodbye() function to a friendlier message
+```
+
+注意，很多开发者倾向于在提交信息中使用一般现在时态。这样看起来更像是对仓库进行的操作，让很多改写历史的操作更加符合直觉。
+
+
+
+## git log
+
+用法 一节提供了 git log 很多的栗子，但请记住，你可以将很多选项用在同一个命令中：
+
+`git log --author="John Smith" -p hello.py`
+这个命令会显示 John Smith 作者对 hello.py 文件所做的所有更改的差异比较（diff）。
+
+..句法是比较分支很有用的工具。下面的栗子显示了在 some-feature 分支而不在 master 分支的所有提交的概览。
+
+```shell
+git log --oneline master..some-feature
+```
+
+> You can undo git add before commit with
+>
+> git reset <file>
+> which will remove it from the current index (the "about to be committed" list) without changing anything else.
+>
+> You can use
+>
+> git reset
+> without any file name to unstage all due changes. This can come in handy when there are too many files to be listed one by one in a reasonable amount of time.
+
+

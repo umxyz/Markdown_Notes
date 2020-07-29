@@ -6,7 +6,7 @@
 - [2. TG 是什么](#org0fb3db8)
 - [3. 为什么使用TG](#orgd37e5aa)
 - [4. TG 注册](#orgd9e92be)
-- \5. TG 使用
+- 5. TG 使用
   - [5.1. 设置中文](#orgdcdcf8a)
   - [5.2. 频道推荐](#org93fb0d7)
 - [6. TG 常见问题](#org8c2f210)

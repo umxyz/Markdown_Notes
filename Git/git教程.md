@@ -1,4 +1,5 @@
-[TOC]
+# Git教程
+
 ```shell
 git init
 git add .
@@ -6,10 +7,6 @@ git commit -m "sync"
 git remote add origin https://github.com/用户名/仓库名
 git push -u origin master
 ```
-
-
-
-# Git教程
 
 ## SSH版
 
@@ -96,8 +93,6 @@ Merge made by the 'recursive' strategy.
 那么继续输入`git push -u origin master`
 可以打开登录github发现你的项目已经同步上去了
 
-
-
 ## [从现有仓库克隆](https://git-scm.com/book/zh/v1/Git-基础-取得项目的-Git-仓库#从现有仓库克隆)
 
 如果想对某个开源项目出一份力，可以先把该项目的 Git 仓库复制一份出来，这就需要用到 `git clone` 命令。如果你熟悉其他的 VCS 比如 Subversion，你可能已经注意到这里使用的是 `clone` 而不是 `checkout`。这是个非常重要的差别，Git 收取的是项目历史的所有数据（每一个文件的每一个版本），服务器上有的数据克隆之后本地也都有了。实际上，即便服务器的磁盘发生故障，用任何一个克隆出来的客户端都可以重建服务器上的仓库，回到当初克隆时的状态（虽然可能会丢失某些服务器端的挂钩设置，但所有版本的数据仍旧还在，有关细节请参考第四章）。
@@ -117,8 +112,6 @@ $ git clone git://github.com/schacon/grit.git mygrit
 唯一的差别就是，现在新建的目录成了 `mygrit`，其他的都和上边的一样。
 
 Git 支持许多数据传输协议。之前的例子使用的是 `git://` 协议，不过你也可以用 `http(s)://` 或者 `user@server:/path.git` 表示的 SSH 传输协议。我们会在第四章详细介绍所有这些协议在服务器端该如何配置使用，以及各种方式之间的利弊。
-
-
 
 ## git 初始化相关操作
 
@@ -150,10 +143,6 @@ git config --global alias.up rebase
 git config --global alias.ci commit
 ```
 
-
-
-
-
 ## git commit
 
 ```shell
@@ -183,8 +172,6 @@ Change the message displayed by hello.py
 ```
 
 注意，很多开发者倾向于在提交信息中使用一般现在时态。这样看起来更像是对仓库进行的操作，让很多改写历史的操作更加符合直觉。
-
-
 
 ## git log
 

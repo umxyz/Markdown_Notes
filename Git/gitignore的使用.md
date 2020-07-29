@@ -1,8 +1,4 @@
-[TOC]
-
 # .gitignore的使用
-
-
 
 ## 1. 对特定文件不追踪
 
@@ -13,17 +9,13 @@
 `/images/`
 仅对名字为`images`的文件夹不追踪
 
-
-
-## 2. git 对已追踪的文件取消追踪
+## 2. git 对已追踪文件取消追踪
 
 你需要 `git rm --cached <file>` 命令
 如：
 `git rm -r --cached WebRoot/WEB-INF/classes/**/*`
 
-
-
-## 3. git push 或者 clone 出错
+## 3. git push 或者 clone出错
 
 出错代码:
 
@@ -40,9 +32,7 @@ fatal: index-pack failed
 git config --global http.postBuffer 1048576000
 ```
 
-
-
-## **有三种方法可以实现忽略Git中不想提交的文件**：
+## 有三种方法可以实现忽略Git中不想提交的文件：
 
 >  https://www.cnblogs.com/kevingrace/p/5690241.html
 >

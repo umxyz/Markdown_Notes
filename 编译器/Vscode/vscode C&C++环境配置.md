@@ -1,5 +1,3 @@
-[TOC]
-
 # vscode C&C++环境配置
 
 ## 第一步：下载安装
@@ -8,26 +6,26 @@
   MinGW-W64 GCC下载地址：https://sourceforge.net/projects/mingw-w64/files/Toolchains targetting Win32/Personal Builds/mingw-builds/installer/mingw-w64-install.exe
   离线下载地址：https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/
   安装选项为 x86_64-win32-seh
-  <img src="https://img-blog.csdnimg.cn/20190909190521644.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDQxOTc2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom: 33%;" />
-  <img src="https://img-blog.csdnimg.cn/20190909190210516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDQxOTc2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom: 50%;" />
+  ![image-20200720190247916](../../#ImageAssets/image-20200720190247916.png)
+  ![20190909190210516](../../#ImageAssets/20190909190210516.png)
 
 ## 第二步：环境配置
 
 - 打开你的mingw-w64安装目录，我是默认安装的在C:\Program Files (x86)，里面的MinGW-W64就是安装的编译器了，将里面的bin文件夹加入路径，我的就是C:\Program Files (x86)\mingw64\bin，将这个加入路径即可。
-  路径加入方法：<img src="https://img-blog.csdnimg.cn/20190904162750336.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDQxOTc2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom: 33%;" />
+  路径加入方法：![20190904162750336](../../#ImageAssets/20190904162750336.png)
 - 加入后，建议重启一下电脑
 
 ## 第三步 下载安装VSCode（已经装好了请跳到第四步）
 
 - vscode请到[官网](https://code.visualstudio.com/#alt-downloads)下载最新版（推荐管理权限64位版本）
 - 下载地址：https://code.visualstudio.com/#alt-downloads
-  <img src="https://img-blog.csdnimg.cn/20190904163810956.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDQxOTc2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom:33%;" />
+  ![20190904163810956](../../#ImageAssets/20190904163810956.png)
 
 ## 第四步：安装VSCode cpp相关的插件
 
 - vscode设置中文环境教程http://www.chuancn.cn/post/将VSCode设置成中文语言环境
 - c++插件
-  <img src="https://img-blog.csdnimg.cn/20190904164722159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDQxOTc2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom:33%;" />
+  ![20190904164722159](../../#ImageAssets/20190904164722159-1595242997297.png)
   -重启vscode软件
 
 ## 第五步：配置c++的.vscode文件
@@ -35,7 +33,7 @@
 - 在你写代码的地方新建文件夹和里面新建一个文件夹
 
 - 然后在文件夹里面创建一个.vscode文件夹
-  <img src="https://img-blog.csdnimg.cn/20190904165238346.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDQxOTc2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom: 67%;" />
+  ![20190904165238346](../../#ImageAssets/20190904165238346.png)
 
 - 然后在.vscode文件夹里面创建如上图所示的四个文件，文件名如下
 
@@ -79,7 +77,7 @@
 
 - tasks.json
   如果遇到找不到文件 比如这样：
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190329001215875.png)
+  ![20190329001215875](../../#ImageAssets/20190329001215875.png)
   把 `"${workspaceFolder}"`替换为 `"\\"`或 `"//"`
 
 ```json
@@ -112,7 +110,7 @@
 
 - c_cpp_properties.json
   "includepath"设置问题 路径获取获取方法为：cmd——》gcc -v -E -x c++ -
-  <img src="https://img-blog.csdnimg.cn/20190314003509862.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDQxOTc2,size_16,color_FFFFFF,t_70" alt="gcc -v -E -x c++ -" style="zoom: 33%;" />
+  ![20190314003509862](../../#ImageAssets/20190314003509862.png)
   如果第一种出错请使用第二种
 
 ```json
@@ -252,7 +250,7 @@
 
 - 在你写代码的地方新建文件夹和里面新建一个文件夹
 - 然后在文件夹里面创建一个.vscode文件夹
-  <img src="https://img-blog.csdnimg.cn/20190904170101614.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDQxOTc2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom:67%;" />
+  ![20190904170101614](../../#ImageAssets/20190904170101614.png)
 - 然后在.vscode文件夹里面创建如上图所示的四个文件，文件名如下
   `launch.json`
   `settings.json`

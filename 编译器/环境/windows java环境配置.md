@@ -1,6 +1,6 @@
 `Java_Home`
 
-**`C:\Program Files\Java\jdk1.8.0_211`**
+**`C:\Program Files\Java\jdk1.8.0_241`**
 
 
 
@@ -12,9 +12,9 @@
 
 或
 
-**`C:\Program Files\Java\jdk1.8.0_211\bin`**
+**`C:\Program Files\Java\jdk1.8.0_241\bin`**
 
-**`C:\Program Files\Java\jdk1.8.0_211\jre\bin`**
+**`C:\Program Files\Java\jdk1.8.0_241\jre\bin`**
 
 
 
@@ -24,4 +24,4 @@
 
 或
 
-**`.;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Java\jdk1.8.0_211\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_211\lib\tools.jar`**
+**`.;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\Java\jdk1.8.0_241\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_241\lib\tools.jar`**

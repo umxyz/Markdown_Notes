@@ -1,4 +1,4 @@
-# [一文告诉你CPU分支预测对性能影响有多大](https://blog.csdn.net/xindoo/article/category/9061749)
+# [CPU分支预测对性能影响有多大](https://blog.csdn.net/xindoo/article/category/9061749)
 
 来源于[stackoverflow](https://stackoverflow.com/)上的一个问题[为什么处理有序数组比处理无需数组快](https://stackoverflow.com/questions/11227809/why-is-it-faster-to-process-a-sorted-array-than-an-unsorted-array)，原文中已经有了一些探讨，这里我们首先来复现下结果，然后再解释下为什么！
 
@@ -22,7 +22,6 @@
             }
         }
     }
-1234567891011121314151617
 ```
 
 直觉上，两段代码的逻辑完全一样，因为数据源一致统计结果也是一致的，所以性能上不会有什么差异，但真的是这样吗？我们用OpenJdk中的基准测试工具[JMH](http://openjdk.java.net/projects/code-tools/jmh/)来测试下。
@@ -41,7 +40,6 @@
 Benchmark                              Mode  Cnt      Score      Error  Units
 BranchPredictionTest.countSortedArr    avgt    3   5212.052 ± 7848.382  us/op
 BranchPredictionTest.countUnsortedArr  avgt    3  31854.238 ± 5393.947  us/op
-123
 ```
 
 是不是很出乎意料，明显有序数组中统计快的多，性能差距足足有 **6倍** 。而且经过我多次测试，这个性能差距非常稳定。是不是感觉不符合逻辑，大多数程序猿都是用高级语言编写代码，其实语言本身就封装了很多底层的细节，事实上，CPU对分支跳转指令是有优化的，这就是我们标题中提到的CPU分支预测。在详细分支预测前先申明一句，本文目标不是讲清楚分支预测，而是告诉你分支预测对性能的影响，想了解更多关于CPU分支预测的内容，文末列出了几篇参考资料。
@@ -260,3 +258,4 @@ BranchPredictionTest.countUnsortedArr  avgt    3  5251.890 ±   64.813  us/op
 2. [维基百科分支预测](https://en.wikipedia.org/wiki/Branch_predictor)
 3. [CPU分支预测](https://www.cnblogs.com/TaigaCon/p/7791303.html)
 4. [局部性原理](https://blog.csdn.net/xindoo/article/details/97525694)
+

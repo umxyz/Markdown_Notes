@@ -1,7 +1,3 @@
-
-
-
-
 # Ubuntu用户权限管理（chown, chmod）
 
 #### 改变文件所有权`chown`

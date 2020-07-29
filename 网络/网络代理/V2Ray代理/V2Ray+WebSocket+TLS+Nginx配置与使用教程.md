@@ -256,14 +256,12 @@ server {
 
 打开软件，点击：服务器→添加[VMess]服务器：
 
-!["/](https://doubibackup.com/v2rayN.png)
+![image-20200717185904979](../../../#ImageAssets/image-20200717185904979.png)
 填上你设置的对应数据，如服务器ip、端口、UUID（服务端和客户端必须一致），加密方式一般为`aes-128-gcm`,协议为`ws`,伪装域名留空，路径为`/ray`，开启tls和不安全传输，设置完保存。
 
 右键V2RayN的系统栏小图标，点击`启用Http代理`，Http代理模式选择第二个`PAC模式`，最后再打开V2RayN软件面板，在检查更新里选择`更新PAC`。
 
 到此，V2Ray就全部配置完成了。
-
-
 
 ```
 转载请超链接注明：逗比根据地 » V2Ray+WebSocket+TLS+Nginx配置与使用教程

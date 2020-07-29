@@ -1,5 +1,3 @@
-[TOC]
-
 # Git常见错误与操作
 
 ## **1. 出现错误 error:src refspec master does not match any**
@@ -38,8 +36,6 @@ http://www.oschina.net/question/159132_86728
 >5、 $ git commit –m”提交说明”
 >6、 $ git push origin 将本地更改推送到远程master分支
 
-
-
 这样你就完成了向远程仓库的推送
 
 如果在github的remote上已经有了文件，会出现错误。此时应当先pull一下，即：
@@ -53,8 +49,6 @@ git pull origin master
 ```bash
 git push origin master
 ```
-
-
 
 ## 2. 如果输入$ git remoteadd origin [**git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git**](mailto:git@github.com:djqiang/gitdemo.git) 
 
@@ -72,8 +66,6 @@ git push origin master
 >
 >   5、找到一个名为gitconfig的文件，打开它把里面的`[remote "origin"]``那一行`删掉就好了！
 
-
-
 ## 3. 如果输入$ ssh -T[**git@github.com**](mailto:git@github.com)
 
   出现错误提示：Permissiondenied (publickey).因为新生成的key不能加入ssh就会导致连接不上github。**
@@ -86,15 +78,11 @@ git push origin master
 >
 >   3、最好检查一下在你复制id_rsa.pub文件的内容时有没有产生多余的空格或空行，有些编辑器会帮你添加这些的。
 
- 
-
 ## 4. 如果输入$ git push origin master
 
   **提示出错信息：error:failedto push som refs to .......**
 
   **解决办法如下：**
-
-
 
 ```html
 1. 先输入$ git pullorigin master //先把远程服务器github上面的文件拉下来
@@ -102,8 +90,6 @@ git push origin master
 3. 如果出现报错 fatal:Couldn't find remote ref master或者fatal: 'origin' doesnot appear to be a git repository以及fatal: Could notread from remote repository.
 4. 则需要重新输入$ git remoteadd yuuxeun@github.com:yuuxeun/xxx.git
 ```
-
-
 
 ## 5. Permission denied (publickey)
 
@@ -184,9 +170,7 @@ ssh-add ~/.ssh/id_rsa1
 git config core.autocrlf true
 ```
 
-
-
-### 7. error: failed to push some refs to 'https://github.com/xxxx.git'
+## 7. error: failed to push some refs to 'https://github.com/xxxx.git'
 
 **解决办法**：错误信息中可以看出本地和远程匹配不完整, 在网上也查找了下, 总结为本地仓库和远程仓库有冲突所致 .
 
@@ -213,8 +197,6 @@ git branch [name]
 git push -u origin [name]
 ```
 
-
-
 ## 8. failed to execute git
 
 在vscoad中选择全部提交时候提示 Git:failed to execute git
@@ -231,8 +213,6 @@ git config --global user.name "yuuxeun"
 ```
 
 重新提交
-
-
 
 ## 9.Host key verification failed
 

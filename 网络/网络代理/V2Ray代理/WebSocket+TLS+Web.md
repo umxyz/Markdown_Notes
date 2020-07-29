@@ -1,4 +1,4 @@
-# 1. WebSocket+TLS+Web
+# WebSocket+TLS+Web
 
 前文分别提到过 TLS 和 WebSocket 的配置方法，而本文搭配 Web 服务并同时实现 TLS 和 WebSocket。关于 Web 的软件本文给出了 Nginx，Caddy 和 Apache 三个例子，三选一即可，也可以选用其它的软件。
 

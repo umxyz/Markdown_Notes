@@ -1,11 +1,15 @@
 # Git教程
 
 ```shell
+git remote rm origin
+git remote -v
 git init
 git add .
 git commit -m "sync"
 git remote add origin https://github.com/用户名/仓库名
 git push -u origin master
+git remote rm origin
+git remote add origin git@github.com:yuuxeun/X.git  
 ```
 
 ## SSH版

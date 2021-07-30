@@ -21,10 +21,19 @@ git remote add origin https://github.com/umxyz/x.git
 ## SSH版
 
 1. Linux中安装git:`sudo apt-get install git`
+
 2. `git config --global user.name "yuuxeun" git config --global user.email "229781766@qq.com"`
    这里用github的账号名和邮箱
+   
 3. 生成SSH 并在github上设置
    终端里cd 进入.ssh文件夹`cd ~/.ssh`并`ssh-keygen -t rsa -C "email@example.com"`生成SSH密匙，保存在.ssh/id_rsa.pub文件中。把生成的密匙复制粘贴到github–>settings–>SSH and GPG keys–>new SSH key中，保存
+   
+   复制 `SSH key` 到粘贴板 命令
+   
+   ```shell
+   pbcopy < ~/.ssh/id_rsa.pub
+   ```
+   
    不进行这一步会出现：
 
 ```
@@ -202,5 +211,4 @@ git log --oneline master..some-feature
 >
 > git reset
 > without any file name to unstage all due changes. This can come in handy when there are too many files to be listed one by one in a reasonable amount of time.
-
 

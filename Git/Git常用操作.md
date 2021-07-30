@@ -37,13 +37,13 @@ git stash pop
 
 首先我在pull之前，git add . 和 git commit -m "" 了，最后还push了
 
-![img](../#ImageAssets/20180628182730260.png)
+![img](../_ImageAssets/20180628182730260.png)
 
 ### 第二步
 
 然后开始pull，执行git pull origin master 告诉你存在三个冲突(其实有一个是内容冲突，另外两个是你新增部分提示你delete)，提示你修复冲突后再commit
 
-![img](../#ImageAssets/20180628183912260.png)
+![img](../_ImageAssets/20180628183912260.png)
 
 ### 第三步
 
@@ -55,13 +55,13 @@ git status ，可以看到红色部分提示 You have unmerged paths.
 
  (fix conflicts and run "git commit") 
 
-![img](../#ImageAssets/2018062818490610.png)
+![img](../_ImageAssets/2018062818490610.png)
 
 ### 第五步
 
 然后分别git add 三个的文件。
 
-![img](../#ImageAssets/20180628184243756.png)
+![img](../_ImageAssets/20180628184243756.png)
 
 ### 第六步
 
@@ -70,13 +70,13 @@ git status ，可以看到红色部分提示 You have unmerged paths.
 All conflicts fixed but you are still merging.
  (use "git commit" to conclude merge)
 
-![img](../#ImageAssets/20180628184706488.png)
+![img](../_ImageAssets/20180628184706488.png)
 
 ### 第七步
 
 最后git add . 。然后git commit 。然后pull就没问题了。
 
-![img](../#ImageAssets/20180628185459378.png)
+![img](../_ImageAssets/20180628185459378.png)
 
 ## git修改分支名称
 

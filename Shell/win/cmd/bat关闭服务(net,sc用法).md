@@ -1,7 +1,6 @@
 # [bat关闭服务(net,sc用法)](https://www.cnblogs.com/qlqwjy/p/8010598.html)
 
 > 下面两个命令最好以管理员方式启动cmd窗口，否则出现权限问题
->
 
 ## 1、net用于打开没有被禁用的服务
 
@@ -30,7 +29,7 @@ NET
 
 　　注意:服务名是服务名称
 
-![img](../../../#ImageAssets/Sun,%2010%20May%202020%20160931.png)
+![img](../../../_ImageAssets/Sun,%2010%20May%202020%20160931.png)
 
 ## 2、用sc可打开被禁用的服务。(也可以查看服务状态)可以创建服务、删除服务、打开与关闭服务
 
@@ -57,7 +56,7 @@ C:\Windows\system32>sc create redis binPath=E:/Redis/redis-server.exe
 [SC] CreateService 成功
 ```
 
-![img](../../../#ImageAssets/1196212-20180313090417196-363946295.png)
+![img](../../../_ImageAssets/1196212-20180313090417196-363946295.png)
 
 当你安装了一个应用程序的时候，将其添加到windows服务中时，便可以这样去设置服务的启动规则，不过这个命令最好在命令行中使用。
 

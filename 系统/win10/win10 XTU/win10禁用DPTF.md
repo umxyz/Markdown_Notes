@@ -10,24 +10,24 @@ DPTF删除后，PL1的默认值可能会改变，原先通过DPTF“打鸡血”
 
 右键开始菜单在设备管理器中我们就可以看到如上图的dptf功能。
 
-![img](../../../#ImageAssets/v2-9d6eeb97b39f17839e7553ec58feb79d_720w.jpg)
+![img](../../../_ImageAssets/v2-9d6eeb97b39f17839e7553ec58feb79d_720w.jpg)
 
 不过如果直接在任务管理器中禁用，随着windows的自动更新这个驱动会被安装回来，所以我们通过策略组的方式禁用设备安装，按win+r键打开运行命令，输入`gpedit.msc`打开策略组
 
-![img](../../../#ImageAssets/v2-819371a0281bffe26111b1b14d6118fb_720w.jpg)
+![img](../../../_ImageAssets/v2-819371a0281bffe26111b1b14d6118fb_720w.jpg)
 
 ## 策略组中阻止安装与下列任何设备id相匹配的设备
 
 在策略组中打开计算机配置-管理模板-系统-设备安装-设备安装限制，在右侧窗口点击“阻止安装与下列任何设备id相匹配的设备”
 
-![img](../../../#ImageAssets/v2-7f3c6af65c99fb49234f00b301a09445_720w.jpg)
+![img](../../../_ImageAssets/v2-7f3c6af65c99fb49234f00b301a09445_720w.jpg)
 
 打开面板，在左边的选择中点击已启用，在下面“禁止安装与下列任何设备id相匹配的设备”中打开显示按钮
 
-![img](../../../#ImageAssets/v2-7025a6d1745e844b5d14fb250a2a5e61_720w.jpg)
+![img](../../../_ImageAssets/v2-7025a6d1745e844b5d14fb250a2a5e61_720w.jpg)
 
 在输入框中输入dptf的硬件id即可，硬件id可以通过右键开始菜单，设备管理器，右键点击设备-详细信息，硬件id来获取，因为dptf总共有三个设备，所以这三个设备的硬件id都需要输入到框里
 
-![img](../../../#ImageAssets/v2-30a2b44bb8ca2561ae7eb917adcdd2d0_720w.jpg)
+![img](../../../_ImageAssets/v2-30a2b44bb8ca2561ae7eb917adcdd2d0_720w.jpg)
 
 然后点击也适用于匹配已安装的设备然后应用或者手动卸载dptf都可以，这样dptf就会被卸载并且不会自动安装。

@@ -97,7 +97,7 @@ win7cn				   ip: 192.168.3.8
 
 
 
-![img](../../../../#ImageAssets/ettercap-filter-1587994459905.png)
+![img](../../../../_ImageAssets/ettercap-filter-1587994459905.png)
 
 0x07 装完以后先简单测试下ettercap是否真正已经可用,尝试嗅下3.8到3.23之间的明文数据
 
@@ -107,7 +107,7 @@ win7cn				   ip: 192.168.3.8
 
 
 
-![img](../../../../#ImageAssets/ettercap-rest-1587994467738.png)
+![img](../../../../_ImageAssets/ettercap-rest-1587994467738.png)
 
 0x08 ettercap 选项功能简要说明
 
@@ -137,7 +137,7 @@ win7cn				   ip: 192.168.3.8
 
 
 
-![img](../../../../#ImageAssets/ettercap-local-plugins-1587994482679.png)
+![img](../../../../_ImageAssets/ettercap-local-plugins-1587994482679.png)
 
 0x10 只嗅探本机指定端口上的明文数据,如,各类web管理登陆密码[80,8080],如果是当前机器是个邮件服务器,无疑是极好的,起码不用再自己苦逼的到处搜集密码了,直接守住这儿慢慢抓密码就好了,在某些内网中通过这种方式来搜集密码,还是非常可行的
 
@@ -148,8 +148,8 @@ win7cn				   ip: 192.168.3.8
 
 
 
-![img](../../../../#ImageAssets/ettercap-local-sniff-1587994489242.png)
-![image-20200716172639161](../../../../#ImageAssets/image-20200716172639161.png)
+![img](../../../../_ImageAssets/ettercap-local-sniff-1587994489242.png)
+![image-20200716172639161](../../../../_ImageAssets/image-20200716172639161.png)
 
 0x011 只嗅探指定机器之间的明文通信数据
 
@@ -162,7 +162,7 @@ win7cn				   ip: 192.168.3.8
 
 
 
-![img](../../../../#ImageAssets/arp_sniffer_common-1587994492773.png)
+![img](../../../../_ImageAssets/arp_sniffer_common-1587994492773.png)
 
 嗅探3.220-251和3.3这台机器之间的所有明文通信数据,主要想快速拿到内网服务器的账号密码,所以,你实际挑内网机器的时候,最好有针对性,一旦拿到密码立马就跑路,这工具动静儿太大
 
@@ -186,8 +186,8 @@ win7cn				   ip: 192.168.3.8
 
 
 
-![img](../../../../#ImageAssets/ettercap-dns2_res-1587994499271.png)
-![image-20200716172606412](../../../../#ImageAssets/image-20200716172606412.png)
+![img](../../../../_ImageAssets/ettercap-dns2_res-1587994499271.png)
+![image-20200716172606412](../../../../_ImageAssets/image-20200716172606412.png)
 
 0x12 当然,ettercap绝非远远就这么点儿功用,来日方长,关于定制规则脚本以及其它的各类高级应用,考虑篇幅,我们后续再慢慢说
 

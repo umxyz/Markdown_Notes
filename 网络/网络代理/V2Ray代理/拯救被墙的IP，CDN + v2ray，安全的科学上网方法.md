@@ -10,7 +10,7 @@
 
 使用 CDN 中转的原理：先在服务器上用 v2ray 伪装成一个网站，再用 CDN 中转，那么，你的流量就是这样传递的：
 
-![img](../../../#ImageAssets/pc-firewall-cdn-vps.png)网络流量传递
+![img](../../../_ImageAssets/pc-firewall-cdn-vps.png)网络流量传递
 
 这样的话，防火墙就只知道你和 CDN 之间建立了连接，不知道你的 vps 实际的 IP 地址，这样就可以有效的防止你的 IP 被 ban，并且 CDN 会有很多 IP 地址，防火墙也不会随意去 ban 他们的 IP，毕竟也有很多正规的网站在使用，所以基本上可以确保你的 IP 的安全。
 
@@ -42,11 +42,11 @@ CDN 也不是万能的，否则大家就都用这个了，其中的优劣如下�
 
 此测试为不严谨测试，只测了一次，本地带宽为电信 20Mbps 下载 + 3Mbps 上传，测试时间为 22:35，晚高峰时期，使用 CloudFlare CDN 代理洛杉矶服务器，因为 CloudFlare 给国内用户默认连接的是洛杉矶节点，所以推荐使用洛杉矶的服务器，速度影响可达到最小。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_22-35-03.png)晚上测速结果
+![img](../../../_ImageAssets/Snipaste_2019-03-10_22-35-03.png)晚上测速结果
 
 2019-3-11，早上连了一个公共 WiFi 进行了测试，电信宽带。
 
-![img](../../../#ImageAssets/20190311130351-e1560508898363.png)早上测试结果
+![img](../../../_ImageAssets/20190311130351-e1560508898363.png)早上测试结果
 
 ### 如何连接被 ban 的 VPS
 
@@ -60,7 +60,7 @@ CDN 也不是万能的，否则大家就都用这个了，其中的优劣如下�
 
 第二种办法需要有一个可用的代理，如果没有的话那么就需要买一个了，可以看看这篇文章：[2019 搬瓦工官方 ss，Just My Socks 购买使用教程，PayPal支付宝付款，优惠码](https://blog.sprov.xyz/2019/03/18/just-my-socks/)，以下是 [MobaXterm](https://blog.sprov.xyz/2019/02/02/mobaxterm-simple-use/) 设置代理的方式。
 
-![img](../../../#ImageAssets/image.png)MobaXterm 设置 ssh 代理
+![img](../../../_ImageAssets/image.png)MobaXterm 设置 ssh 代理
 
 第三种办法要求更高一些，需要拥有其它的服务器，既然你拥有其它的服务器，那么这就不是什么问题了。
 
@@ -92,23 +92,23 @@ CDN 也不是万能的，否则大家就都用这个了，其中的优劣如下�
 
 首先进去[godaddy官网](https://blog.sprov.xyz/go/godaddy-sg)，注册一个账号，注册流程自然不用说了，常规操作。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-09_21-02-21.png)注册godaddy
+![img](../../../_ImageAssets/Snipaste_2019-03-09_21-02-21.png)注册godaddy
 
 接下来选购域名，输入一个你容易记得住的名称，在下方选择最便宜的即可。不同的域名实际使用不会有什么不同，对域名来说重要的是名字和后缀，一个好记的域名对网站的发展很重要。不过我们并不是要搭建网站，所以选择一个你自己喜欢的就好，但是也有可能你喜欢的别人已经注册过了，那么就换个名称。
 
 特别需要注意的是，godaddy购买首年的域名会很便宜，但是第二年开始就会恢复原价，所以建议一年到期后重新购买一个新的域名，这样又是首年购买。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-09_21-23-07.png)选购域名
+![img](../../../_ImageAssets/Snipaste_2019-03-09_21-23-07.png)选购域名
 
 进入购物车结算，这里可以不选隐私保护，因为只是自己用，不做网站，并不会有哪个无聊的人看到你的信息然后给你发垃圾邮件，更重要的原因是因为隐私保护比较贵，当然不在乎这点钱的人随意。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-09_21-35-02.png)
+![img](../../../_ImageAssets/Snipaste_2019-03-09_21-35-02.png)
 
 点击进入购物车，会看到结算页面，它默认会给你选择2年，两年会比较贵，选择1年就好了，土豪随意。
 
 左边需要填上个人信息，电话号码是哪个国家就填哪个国家的信息，我这里默认是新加坡，没有改就截图了，除了电话号码，其余的可以填不真实的信息，不要太假就行。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-09_21-38-36.png)域名结算
+![img](../../../_ImageAssets/Snipaste_2019-03-09_21-38-36.png)域名结算
 
 接下来就是付款了，常规操作，这里不再阐述。
 
@@ -120,49 +120,49 @@ CloudFlare 是一家全球知名的 CDN 服务商，并且提供了免费的 CDN
 
 首先打开 [CloudFlare 官网](https://blog.sprov.xyz/go/cloudflare)，注册一个账号，注册流程很简单，只需要邮箱就行了，这里不再阐述。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_20-48-49.png)注册 CloudFlare
+![img](../../../_ImageAssets/Snipaste_2019-03-10_20-48-49.png)注册 CloudFlare
 
 ### 使用 CloudFlare 管理域名
 
 注册完成后登录账号，点击 Add site，这个功能的作用是将域名交给 CloudFlare 管理，这样 CloudFlare 才能给你的域名分配 CDN。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_20-51-58.png)添加域名
+![img](../../../_ImageAssets/Snipaste_2019-03-10_20-51-58.png)添加域名
 
 输入你的二级域名。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_20-54-48.png)输入二级域名
+![img](../../../_ImageAssets/Snipaste_2019-03-10_20-54-48.png)输入二级域名
 
 点下一步，选择套餐，这里我们选择 FREE 套餐。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_20-58-36.png)选择套餐
+![img](../../../_ImageAssets/Snipaste_2019-03-10_20-58-36.png)选择套餐
 
 下一步之后，CloudFlare 会检测你域名原先的解析记录，如果你之前有解析记录，CloudFlare 可能检测不全，这时你就需要自己手动将缺失的解析记录添加上，如果不添加的话，之前的解析记录就没了。如果没有要添加的，直接下一步即可。
 
 > 橘色云朵代表流量通过 CloudFlare 的 CDN，灰色云朵代表不通过 CDN，点击一下云朵即可切换。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_21-22-59.png)检测解析记录
+![img](../../../_ImageAssets/Snipaste_2019-03-10_21-22-59.png)检测解析记录
 
 继续下一步，到这里会提示让你修改 Nameservers（域名服务器），并提供了两个域名服务器地址，先去你的注册域名的网站修改域名的域名服务器，下面我就以 godaddy 为例来说明如何修改域名服务器。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_21-11-03.png)域名服务器
+![img](../../../_ImageAssets/Snipaste_2019-03-10_21-11-03.png)域名服务器
 
 ### 修改 godaddy 域名服务器
 
 首先登录 [godaddy](https://blog.sprov.xyz/go/godaddy)，在右上角账号的位置下拉，选择【我的产品】。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_21-03-56.png)我的产品
+![img](../../../_ImageAssets/Snipaste_2019-03-10_21-03-56.png)我的产品
 
 在你的域名右边点【DNS】。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_21-06-52.png)进入【DNS】
+![img](../../../_ImageAssets/Snipaste_2019-03-10_21-06-52.png)进入【DNS】
 
 在下方找到域名服务器，点击更改。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_21-08-22.png)更改域名服务器
+![img](../../../_ImageAssets/Snipaste_2019-03-10_21-08-22.png)更改域名服务器
 
 选择自定义，更改为 CloudFlare 给你提供的域名服务器地址，注意不要有多余的域名服务器，不是 CloudFlare 提供的就要删除，否则可能会出问题。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_21-09-51.png)更改域名服务器
+![img](../../../_ImageAssets/Snipaste_2019-03-10_21-09-51.png)更改域名服务器
 
 其它的域名注册商怎么修改域名服务器我这里就不再细说了，具体可以去百度百度，都很简单。
 
@@ -174,13 +174,13 @@ CloudFlare 是一家全球知名的 CDN 服务商，并且提供了免费的 CDN
 
 我们选择 【DNS】，这里就是管理域名的解析记录的地方，我这里还没有添加解析记录，下方红框可以用来添加一条解析记录，要填入的信息分别是：解析记录类型、解析名称、解析记录、TTL值。橘色云朵代表该解析记录使用 CDN，灰色云朵代表该解析记录不使用 CDN，点击云朵可以进行切换。
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_21-50-42.png)DNS管理
+![img](../../../_ImageAssets/Snipaste_2019-03-10_21-50-42.png)DNS管理
 
 我们先添加一条解析记录，类型选择 A，名称填入 www，再填上你的 vps 的 IP 地址，TTL 默认选择 Automatic，橘色云朵，填好之后点击 Add Record，这样，一条解析记录就添加完成了。
 
 > 名称也可以填入其它的值，比如填 @ 就代表直接解析二级域名
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_22-45-31.png)添加解析记录
+![img](../../../_ImageAssets/Snipaste_2019-03-10_22-45-31.png)添加解析记录
 
 假设你的域名为 haha.xyz，这条解析记录的意思就是：将 www.haha.xyz 解析到 IP 地址 123.123.123.123 上。因为开启了橘色云朵，所以实际上的解析记录是 CloudFlare 提供的 CDN 节点的 IP，并由 CDN 节点来访问实际的 IP 地址。
 
@@ -226,7 +226,7 @@ CloudFlare 是一家全球知名的 CDN 服务商，并且提供了免费的 CDN
 
 添加后会自动重启 v2ray 生效，要确保没有其它程序占用 80 端口，如果重启后 v2ray 状态为错误，那么很有可能是 80 端口被占用了，请自行百度解决一下。
 
-![img](../../../#ImageAssets/image-4.png)添加账号
+![img](../../../_ImageAssets/image-4.png)添加账号
 
 ## 六、客户端使用
 
@@ -251,7 +251,7 @@ CloudFlare 是一家全球知名的 CDN 服务商，并且提供了免费的 CDN
 - 路径一定要和服务端的一模一样，错了就连不上
 - 其余的都是常规配置，这里不再说明
 
-![img](../../../#ImageAssets/Snipaste_2019-03-10_23-27-34.png)配置填写
+![img](../../../_ImageAssets/Snipaste_2019-03-10_23-27-34.png)配置填写
 
 ## 七、总结
 

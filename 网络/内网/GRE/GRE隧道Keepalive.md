@@ -110,7 +110,7 @@ Router# configure terminalRouter(config)#interface tunnel0Router(config-if)#keep
 
 为了改善请知道隧道保活机制如何工作，考虑此示例通道拓扑和配置：
 
-[![img](../../../#ImageAssets/118370-technote-gre-00-00.png)](https://www.cisco.com/c/dam/en/us/support/docs/ip/generic-routing-encapsulation-gre/118370-technote-gre-00-00.png)
+[![img](../../../_ImageAssets/118370-technote-gre-00-00.png)](https://www.cisco.com/c/dam/en/us/support/docs/ip/generic-routing-encapsulation-gre/118370-technote-gre-00-00.png)
 
 路由器 A
 

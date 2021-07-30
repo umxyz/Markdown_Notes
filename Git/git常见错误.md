@@ -220,3 +220,12 @@ git config --global user.name "yuuxeun"
 ssh -t git@github.com
 ```
 
+
+
+## 10.[fatal: read error: Connection reset by peer](https://stackoverflow.com/questions/17977206/fatal-read-error-connection-reset-by-peer)
+
+If internet connection is also fine, just run
+
+```shell
+git gc 
+```

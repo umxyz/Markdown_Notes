@@ -30,7 +30,7 @@ apt-get update
 
 样品输出：
 
-![apt-get更新结果。](../../../#ImageAssets/up_tp_date.png)
+![apt-get更新结果。](../../../_ImageAssets/up_tp_date.png)
 
 2.下一步是在系统上安装pip软件包管理器。 您可以看到，该命令也将安装许多依赖项。
 
@@ -42,7 +42,7 @@ apt-get install python-pip
 
 样品输出：
 
-![安装点](../../../#ImageAssets/python-pip_package.png)
+![安装点](../../../_ImageAssets/python-pip_package.png)
 
 3.安装软件包后，可以使用pip命令安装应用程序：
 
@@ -124,7 +124,7 @@ Download: 900.64 Mbit/sTesting upload speed.....................................
 
 以下是我上面测试速度测试结果的图片。
 
-![速度最快的结果。](../../../#ImageAssets/51000162861.png)
+![速度最快的结果。](../../../_ImageAssets/51000162861.png)
 
 如果您只想在ping，下载和上传信息，请使用：
 
@@ -142,7 +142,7 @@ speedtest-cli --list
 2628) Telstra (Adelaide, Australia) [17098.98 km]4051) Vodafone Hutchison Australia (AE) (Adelaide, Australia) [17098.98 km]...........................................................................3254) Vodafone Hutchison Australia (PH) (Perth, Australia) [18700.26 km]1931) IX Australia (Perth, Australia) [18700.26 km]
 ```
 
-![Speedtest服务器列表。](../../../#ImageAssets/list.png)
+![Speedtest服务器列表。](../../../_ImageAssets/list.png)
 
 通过搜索列表中的距离，您可能已经生成了大量的服务器列表。 如果要检查特定区域的服务器的结果，则可以通过将结果配置为grep命令来检查（澳大利亚是该区域的示例）：
 
@@ -152,7 +152,7 @@ speedtest-cli --list | grep –i Australia
 2604) Telstra (Brisbane, Australia) [15501.92 km]1594) 'Yes' Optus (Brisbane, Australia) [15501.92 km]...............................................................................................3254) Vodafone Hutchison Australia (PH) (Perth, Australia) [18700.26 km]1931) IX Australia (Perth, Australia) [18700.26 km]
 ```
 
-![澳大利亚的最佳成绩。](../../../#ImageAssets/list_2.png)
+![澳大利亚的最佳成绩。](../../../_ImageAssets/list_2.png)
 
 要测试与特定服务器的连接速度，必须使用第5步和6中生成的服务器ID。
 

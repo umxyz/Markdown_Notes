@@ -62,20 +62,20 @@ HTTPS ports supported by Cloudflare:
 
 上面的都做好之后，我们现在可以把域名接入CDN中了。如图：
 
-![image-20200721154723746](../../#ImageAssets/image-20200721154723746.png)
+![image-20200721154723746](../../_ImageAssets/image-20200721154723746.png)
 
-![image-20200721154745131](../../#ImageAssets/image-20200721154745131.png)
+![image-20200721154745131](../../_ImageAssets/image-20200721154745131.png)
 
 ## 七、设置反-代
 
 这一步很重要，在刚刚的新建的网站里面设置一个反代。
 目标URL:`http://127.0.0.1:8080` ，具体看图:
 
-![image-20200721155022411](../../#ImageAssets/image-20200721155022411.png)
+![image-20200721155022411](../../_ImageAssets/image-20200721155022411.png)
 
 ## 七、设置防火墙
 
 禁止访问8080端口
 
-![image-20200721154950867](../../#ImageAssets/image-20200721154950867.png)
+![image-20200721154950867](../../_ImageAssets/image-20200721154950867.png)
 

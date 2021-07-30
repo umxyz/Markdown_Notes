@@ -2,5 +2,5 @@
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles`
 
-![image-20191117002855858](../../../#ImageAssets/image-20191117002855858.png)
+![image-20191117002855858](../../../_ImageAssets/image-20191117002855858.png)
 

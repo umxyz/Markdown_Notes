@@ -48,7 +48,7 @@ IdentityFile ~/.ssh/id_rsa
 
 ### windows
 
-![这里写图片描述](../../../#ImageAssets/20170517194511719.png)
+![这里写图片描述](../../../_ImageAssets/20170517194511719.png)
 
 ```shell
 #	$OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $

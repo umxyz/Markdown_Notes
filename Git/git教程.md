@@ -1,15 +1,21 @@
 # Git教程
 
 ```shell
-git remote rm origin
-git remote -v
+git config --global http.postBuffer 157286400
 git init
 git add .
 git commit -m "sync"
 git remote add origin https://github.com/用户名/仓库名
 git push -u origin master
+```
+
+```shell
+git remote -v
 git remote rm origin
-git remote add origin git@github.com:yuuxeun/X.git  
+#ssh
+git remote add origin git@github.com:umxyz/X.git
+#https
+git remote add origin https://github.com/umxyz/x.git
 ```
 
 ## SSH版
@@ -69,8 +75,6 @@ remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 如果您想要为此分支创建跟踪信息，您可以执行：
 
     git branch --set-upstream-to=origin/<分支> master
-
-1234567891011121314151617
 ```
 
 接着执行`git pull git@github.com:××/××.git master`
@@ -79,7 +83,6 @@ remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 ```
  * branch            master     -> FETCH_HEAD
 fatal: 拒绝合并无关的历史
-123
 ```
 
 就输入`git pull git@github.com:××/××.git master --allow-unrelated-histories`

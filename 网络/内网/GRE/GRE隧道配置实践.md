@@ -1,6 +1,6 @@
 # [GRE隧道配置实践](https://www.linuxprobe.com/gre-tunnel-config.html)
 
-![运维必看-GRE隧道配置实践！运维必看-GRE隧道配置实践！](../../../#ImageAssets/int-ext-topl01-1.jpg)
+![运维必看-GRE隧道配置实践！运维必看-GRE隧道配置实践！](../../../_ImageAssets/int-ext-topl01-1.jpg)
 
 从拓扑图可以看到，公司和机房的服务器上各有一个内网IP和外部IP。gre隧道的原理就是把两台服务器的外网IP进行绑定，在两个外网IP直接建立一条隧道tunnel2。tunnel2对服务器看来，就像一个网口，直连着隧道的另一边。
 

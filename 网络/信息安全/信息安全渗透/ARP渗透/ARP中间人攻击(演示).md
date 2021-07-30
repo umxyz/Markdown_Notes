@@ -10,7 +10,7 @@
 
 我画了一个简单的图示：
 
-![img](../../../../#ImageAssets/2017-04-25-14916406508121.png)
+![img](../../../../_ImageAssets/2017-04-25-14916406508121.png)
 
 - 受害者IP地址：192.168.0.106
 - Kali Linux的IP地址：192.168.0.112，使用网络接口wlan0
@@ -42,7 +42,7 @@
 
 > arpspoof redirects packets from a target host (or all hosts) on the LAN intended for another host on the LAN by forging ARP replies. This is an extremely effective way of sniffing traffic on a switch.
 
-![img](../../../../#ImageAssets/2017-04-25-14916407630010.png)
+![img](../../../../_ImageAssets/2017-04-25-14916407630010.png)
 
 路由器－>受害者：
 
@@ -70,7 +70,7 @@ It is an horrific invasion of privacy and shouldn’t be used by anyone anywhere
 
 当受害者电脑浏览带图片的网站（http）时，可以截获图像：
 
-![img](../../../../#ImageAssets/2017-04-25-14916408368057.png)
+![img](../../../../_ImageAssets/2017-04-25-14916408368057.png)
 
 数据加密可以有效防止中间人攻击。
 
@@ -78,7 +78,7 @@ It is an horrific invasion of privacy and shouldn’t be used by anyone anywhere
 
 > urlsnarf outputs all requested URLs sniffed from HTTP traffic in CLF(Common Log Format, used by almost all web servers), suitable for off‐line post-processing with your favorite web log analysis tool (analog,wwwstat, etc.).
 
-![img](../../../../#ImageAssets/2017-04-25-14916408562852.png)
+![img](../../../../_ImageAssets/2017-04-25-14916408562852.png)
 
 ## sslstrip：
 

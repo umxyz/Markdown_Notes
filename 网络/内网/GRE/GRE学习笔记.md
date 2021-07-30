@@ -26,13 +26,13 @@
 
 首先，多数tunnel都是点到点的，也就是说，是从机器的一端到另外一个机器的一端，如下图：
 
-![img](../../../#ImageAssets/20130530092444742.png)
+![img](../../../_ImageAssets/20130530092444742.png)
 
 除了端点的 host A 和 host B之外，中间经过的任何设备都是看不到里面的 IPv6 的头，对于它们来说，经过 sit 发出的包和其它的 IPv4 的包没有任何区别。
 
 GRE tunnel 却不一样了，它的原理从根本上和 sit，ipip 这样的 tunnel 就不一样。除了外层的 IP 头和内层的 IP 头之间多了一个 GRE 头之外，它最大的不同是，tunnel 不是建立在最终的 host 上，而是在中间的 router 上！换句话说，对于端点 host A 和 host B 来说，该 tunnel 是透明的（对比上面的 sit tunnel）。这是网上很多教程里没有直接告诉你的。理解这一点非常关键，正是因为它这么设计的，所以它才能解决 ipip tunnel 解决不了的问题。所以，经过 GRE tunnel 发送的包（从 host A 发送到 host B）大体过程是这样子的：
 
-![img](../../../#ImageAssets/20130530092429329.png)
+![img](../../../_ImageAssets/20130530092429329.png)
 
 我们可以看出，从 host A 发出的包其实就是一个很普通的 IP 包，除了目的地址不直接可达外。该 GRE tunnel 的一端是建立在 router A上，另一段是建立在 router B上，所以添加外部的 IP 头是在 router A 上完成的，而去掉外面的 IP 头是在 router B上完成的，两个端点的 host 上几乎什么都不用做（除了配置路由，把发送到 10.0.2.0 的包路由到 router A）！
 
@@ -40,7 +40,7 @@ GRE tunnel 却不一样了，它的原理从根本上和 sit，ipip 这样的 tu
 
 最后来一张GRE报文格式图：
 
-![img](../../../#ImageAssets/20130530092500469.png)
+![img](../../../_ImageAssets/20130530092500469.png)
 
 ## 参考文章：
 

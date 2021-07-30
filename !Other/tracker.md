@@ -1,5 +1,3 @@
-
-
 # list:
 
 > http://www.torrenttrackerlist.com/torrent-tracker-list

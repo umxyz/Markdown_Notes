@@ -12,7 +12,7 @@ Ubuntu18.04.1开发团队为了Ubuntu18.04.1系统的安全，默认root不能�
 
 （3）重复root密码；
 
-![img](../../../#ImageAssets/20180730181436364.png)
+![img](../../../_ImageAssets/20180730181436364.png)
 
 ## 2.修改文件 
 
@@ -25,7 +25,7 @@ greeter-show-manual-login=true
 all-guest=false
 ```
 
-![img](../../../#ImageAssets/20180730181451949.png)
+![img](../../../_ImageAssets/20180730181451949.png)
 
 ## 3.进入/etc/pam.d文件夹下，修改gdm-autologin和gdm-passwd(有的文件名可能是gdm-password，请仔细排查)文件内容(首先修改文件权限，参考步骤2的操作)
 
@@ -37,7 +37,7 @@ gdm-passwd文件注释掉auth required pam_success_if.so user!=root quiet_succes
 
 \#auth required pam_success_if.so user!=root quiet_success
 
-![img](../../../#ImageAssets/20180730181707303.jfif)
+![img](../../../_ImageAssets/20180730181707303.jfif)
 
 ## 4.修改/root/.profile文件
 
@@ -53,7 +53,7 @@ vim命令找不到，刚安装的Ubuntu系统没有vim，使用vi命令或安装
 
 b.如图：
 
-![img](../../../#ImageAssets/20180730181510293.png)
+![img](../../../_ImageAssets/20180730181510293.png)
 
 最后一行修改为：
 

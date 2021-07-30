@@ -169,7 +169,7 @@
 
 
 
-![PAC文件操作选项](../../../#ImageAssets/ShadowsocksR-1.jpg)
+![PAC文件操作选项](../../../_ImageAssets/ShadowsocksR-1.jpg)
 
 
 
@@ -204,7 +204,7 @@
 
   直接鼠标中键单机小飞机也可以打开这一窗口，会显示你目前 SSR 的所有服务器的统计信息。
 
-  ![服务器记录](../../../#ImageAssets/ShadowsocksR-2.jpg)
+  ![服务器记录](../../../_ImageAssets/ShadowsocksR-2.jpg)
 
   在这一界面，双击某个条目的服务器可以直接切换至该服务器；
 
@@ -361,7 +361,7 @@ https://github.com/shadowsocksr-backup/shadowsocks-rss/wiki
 
 - **1** 右击 SwitchyOmega 的图标-选项，进入设置界面，点击“添加情景模式”，填入一个名称（随便写），下面要选中“代理服务器”，然后点击“创建”。
 
-  ![添加情景模式](../../../#ImageAssets/ShadowsocksR-3.jpg)
+  ![添加情景模式](../../../_ImageAssets/ShadowsocksR-3.jpg)
 
   
 
@@ -391,7 +391,7 @@ https://github.com/shadowsocksr-backup/shadowsocks-rss/wiki
 
   ，然后点击左下角的“应用选项”就可以保存配置了。
 
-  ![配置情景模式](../../../#ImageAssets/ShadowsocksR-4.jpg)
+  ![配置情景模式](../../../_ImageAssets/ShadowsocksR-4.jpg)
 
   再次强调一下，本地端口务必要填
 
@@ -435,7 +435,7 @@ https://www.sockscap64.com/sstap/
 
 
 
-![SSTap 主界面](../../../#ImageAssets/ShadowsocksR-5.jpg)
+![SSTap 主界面](../../../_ImageAssets/ShadowsocksR-5.jpg)
 
 
 
@@ -455,11 +455,11 @@ https://www.sockscap64.com/sstap/
 
   十分懒人，复制链接进去一键添加。
 
-  ![通过 SS/SSR 链接批量添加](../../../#ImageAssets/ShadowsocksR-6.jpg)
+  ![通过 SS/SSR 链接批量添加](../../../_ImageAssets/ShadowsocksR-6.jpg)
 
   SS/SSR 链接一般由你的 SS/SSR 商提供；或者你也可以直接在 SS/SSR 客户端中查看配置，然后复制配置中的 SS/SSR 链接。
 
-  ![在 SS/SSR 客户端中查看链接](../../../#ImageAssets/ShadowsocksR-7.jpg)
+  ![在 SS/SSR 客户端中查看链接](../../../_ImageAssets/ShadowsocksR-7.jpg)
 
 - **通过 SS/SSR 订阅添加（强烈推荐）**
   详见[设置-SSR订阅](https://www.quchao.net/ShadowsocksR.html#SSR订阅)
@@ -470,7 +470,7 @@ https://www.sockscap64.com/sstap/
 
 
 
-![模式选择](../../../#ImageAssets/ShadowsocksR-8.jpg)
+![模式选择](../../../_ImageAssets/ShadowsocksR-8.jpg)
 
 
 
@@ -499,7 +499,7 @@ https://www.sockscap64.com/sstap/
 
 右击 SSTap 的任务栏图标或者点击主界面右下方的齿轮图标即可出现程序菜单。
 
-![程序菜单](../../../#ImageAssets/ShadowsocksR-9.jpg)
+![程序菜单](../../../_ImageAssets/ShadowsocksR-9.jpg)
 
 
 
@@ -507,7 +507,7 @@ https://www.sockscap64.com/sstap/
 
 
 
-![设置](../../../#ImageAssets/ShadowsocksR-10.jpg)
+![设置](../../../_ImageAssets/ShadowsocksR-10.jpg)
 
 
 
@@ -525,7 +525,7 @@ https://www.sockscap64.com/sstap/
 
 
 
-![配置智能 DNS](../../../#ImageAssets/ShadowsocksR-11.jpg)
+![配置智能 DNS](../../../_ImageAssets/ShadowsocksR-11.jpg)
 
 
 
@@ -533,7 +533,7 @@ https://www.sockscap64.com/sstap/
 
 
 
-![事件管理](../../../#ImageAssets/ShadowsocksR-12.jpg)
+![事件管理](../../../_ImageAssets/ShadowsocksR-12.jpg)
 
 
 
@@ -543,7 +543,7 @@ https://www.sockscap64.com/sstap/
 
 
 
-![附加路由管理](../../../#ImageAssets/ShadowsocksR-13.jpg)
+![附加路由管理](../../../_ImageAssets/ShadowsocksR-13.jpg)
 
 
 
@@ -556,7 +556,7 @@ https://www.sockscap64.com/sstap/
 
 
 
-![SSR 订阅](../../../#ImageAssets/ShadowsocksR-14.jpg)
+![SSR 订阅](../../../_ImageAssets/ShadowsocksR-14.jpg)
 
 
 
@@ -590,7 +590,7 @@ https://www.sockscap64.com/sstap/
 
 打开程序以后，点击上方的“shadowsocks R ▼”字样即可进入配置管理界面。
 
-![img](../../../#ImageAssets/ShadowsocksR-15.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-15.jpg)
 
 ### 添加配置
 
@@ -624,7 +624,7 @@ https://www.sockscap64.com/sstap/
 
 点击右上角的小飞机图标即可开启代理。第一次连接会弹出一个请求V*N连接权限的窗口，允许即可。
 
-![img](../../../#ImageAssets/ShadowsocksR-16.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-16.jpg)
 
 ### 服务器设置
 
@@ -737,7 +737,7 @@ https://www.sockscap64.com/sstap/
 
 ## 主页
 
-![img](../../../#ImageAssets/ShadowsocksR-17.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-17.jpg)
 
 ### 未连接
 
@@ -775,7 +775,7 @@ emmmmmm，这个开关应该不用讲吧……
 
 以下是目前（2018-06-12） Shadowrocket 支持的代理协议：
 
-![img](../../../#ImageAssets/ShadowsocksR-18.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-18.jpg)
 
 #### 通过订阅添加（推荐）
 
@@ -822,7 +822,7 @@ emmmmmm，这个开关应该不用讲吧……
 
 ## 配置
 
-![img](../../../#ImageAssets/ShadowsocksR-19.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-19.jpg)
 
 前三项没什么好说的。
 
@@ -836,7 +836,7 @@ emmmmmm，这个开关应该不用讲吧……
 默认会有`default.conf`配置文件，这个规则为 GFWList + 绕过大陆 + 常用广告域名屏蔽 + 绕过国内常见域名。
 点击以后会弹出二级菜单：
 
-![img](../../../#ImageAssets/ShadowsocksR-20.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-20.jpg)
 
 下面只讲几个重要的：
 
@@ -857,11 +857,11 @@ emmmmmm，这个开关应该不用讲吧……
 
 Shadowrocket 的强大核心所在。
 
-![img](../../../#ImageAssets/ShadowsocksR-21.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-21.jpg)
 
 ### 通用
 
-![img](../../../#ImageAssets/ShadowsocksR-22.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-22.jpg)
 
 一个配置的通用设置，一般情况下有可能需要改动的只有
 
@@ -872,17 +872,17 @@ Shadowrocket 的强大核心所在。
 
 ### 规则、添加规则
 
-![img](../../../#ImageAssets/ShadowsocksR-23.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-23.jpg)
 
 规则可以在上一页中点击“添加规则”来添加，点击后你将会看到以下界面：
 
-![img](../../../#ImageAssets/ShadowsocksR-24.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-24.jpg)
 
 #### 类型
 
 一共有6种类型：
 
-![img](../../../#ImageAssets/ShadowsocksR-25.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-25.jpg)
 
 - **DOMAIN-SUFFIX**（域名后缀）
   此时应在下面填入形如`abc.com`的域名后缀，则此规则会对所有以`abc.com`结尾的域名生效，即对`*.abc.com`以及`abc.com`（顶级域名）生效。
@@ -953,7 +953,7 @@ Shadowrocket 的强大核心所在。
 
 点击“添加 URL 重写”可以添加一条 URL 重写规则。
 
-![img](../../../#ImageAssets/ShadowsocksR-26.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-26.jpg)
 
 #### URL
 
@@ -966,7 +966,7 @@ Shadowrocket 的强大核心所在。
 
 #### 类型
 
-![img](../../../#ImageAssets/ShadowsocksR-27.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-27.jpg)
 
 有五种类型：
 
@@ -983,7 +983,7 @@ Shadowrocket 的强大核心所在。
 
 ### HTTPS 解密
 
-![img](../../../#ImageAssets/ShadowsocksR-28.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-28.jpg)
 
 这个功能可以说是一个十分劲爆的功能了（我最早开始用 Shadowrocket 的时候还没有这个功能），Shadowrocket 会使用中间人攻击的方式来解密你所指定的域名的 HTTPS 流量。
 这个功能应该是用在代理日志抓 HTTPS 包上的。
@@ -1002,7 +1002,7 @@ Shadowrocket 的强大核心所在。
 这里的功能都是辅助性的功能。
 只讲一些重点功能。
 
-![img](../../../#ImageAssets/ShadowsocksR-29.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-29.jpg)
 
 ### 统计
 
@@ -1025,7 +1025,7 @@ Shadowrocket 的强大核心所在。
 
 ## 设置
 
-![img](../../../#ImageAssets/ShadowsocksR-30.jpg)
+![img](../../../_ImageAssets/ShadowsocksR-30.jpg)
 
 ### 证书
 

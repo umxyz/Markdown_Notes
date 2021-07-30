@@ -37,19 +37,19 @@ ec_gid = 0                # nobody is the default
 
 ettercap图形用户界面：Applications->Sniffing & Spoofing->ettercap-graphical：
 
-![img](../../../../#ImageAssets/2017-04-25-14916410231202-1581241624580.png)
+![img](../../../../_ImageAssets/2017-04-25-14916410231202-1581241624580.png)
 
 Options菜单里确保选择Promisc mode；
 
 Sniff菜单中选择Unified sniffing：选择使用的网络接口，我使用wlan0；如果你使用有线，选择eth0；
 
-![img](../../../../#ImageAssets/2017-04-25-14916410336839-1581241624580.png)
+![img](../../../../_ImageAssets/2017-04-25-14916410336839-1581241624580.png)
 
 Host->Scan for hosts，扫描当前网络中的所有主机。
 
 Host->Host list，扫描到的主机列表：
 
-![img](../../../../#ImageAssets/2017-04-25-14916410473320-1581241624605.png)
+![img](../../../../_ImageAssets/2017-04-25-14916410473320-1581241624605.png)
 
 然后我们就可以选择要攻击的目标了，例如，选择192.168.0.105的IP地址，点击Add to Target 1（添加到目标1）,然后选择网关的IP地址192.168.0.1，点击Add to Target 2（添加到目标2）。所有从192.168.0.105发送的数据都会经过Kali Linux。
 
@@ -58,7 +58,7 @@ Host->Host list，扫描到的主机列表：
 可以添加多个主机。
 
 查看添加的攻击目标：Targets->Current targets：
-![img](../../../../#ImageAssets/2017-04-25-14916410664365-1581241624608.png)
+![img](../../../../_ImageAssets/2017-04-25-14916410664365-1581241624608.png)
 
 再次确保已开启端口转发，有时会自己关上，不知道为什么：
 

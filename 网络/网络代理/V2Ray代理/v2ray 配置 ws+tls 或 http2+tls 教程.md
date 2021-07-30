@@ -68,7 +68,7 @@ tls 是传输层安全性协议，其前身是 ssl 协议，可以理解为 ssl 
 
 v2-ui 面板自动配置：
 
-![img](../../../#ImageAssets/image-5.png)ws 配置
+![img](../../../_ImageAssets/image-5.png)ws 配置
 
 主要说明一下 tls 配置，域名要解析到你安装了 v2ray 的 VPS 的 IP。证书文件一般是 .pem / .crt / .cer 后缀名，密钥文件一般是 .key 后缀名，或者也可能是 .pem，密钥文件名一般会带 “key” 的字样。
 
@@ -76,11 +76,11 @@ v2-ui 面板自动配置：
 
 这两个文件需要上传到 VPS，可以放在服务器的任意位置，但是你要知道自己上传到哪个路径了，将这两个文件的绝对路径填上去即可。
 
-![img](../../../#ImageAssets/image-7.png)证书路径配置
+![img](../../../_ImageAssets/image-7.png)证书路径配置
 
 或者你也可以不上传这两个文件到 VPS，直接用文本方式打开它们，选择【证书文件内容】，将两个文件的内容分别填进去也可以，最终的效果是一样的。
 
-![img](../../../#ImageAssets/image-8.png)证书文件内容配置
+![img](../../../_ImageAssets/image-8.png)证书文件内容配置
 
 ## 五、http2 + tls 服务端配置
 
@@ -126,7 +126,7 @@ v2-ui 面板自动配置：
 
 跟上面的的 ws + tls 配置方式差不多，把传输配置改成 http 即可，这个 http 就是 http/2，只不过我懒得改而已。tls 的配置方式直接参考 ws + tls 的配置方式，一样的。
 
-![img](../../../#ImageAssets/image-1.png)
+![img](../../../_ImageAssets/image-1.png)
 
 ## 六、那到底用哪个
 
@@ -136,7 +136,7 @@ v2-ui 面板自动配置：
 
 我就以 Windows 的 v2rayN 为例，其它客户端大同小异，差别不大。
 
-![img](../../../#ImageAssets/image-14.png)v2rayN 配置
+![img](../../../_ImageAssets/image-14.png)v2rayN 配置
 
 ## 八、扩展
 

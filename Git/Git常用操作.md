@@ -121,3 +121,9 @@ git push origin newName
 git branch --set-upstream-to origin/newName
 ```
 
+## 修改git远程仓库地址
+
+```shell
+git remote set-url origin https://xxx
+```
+

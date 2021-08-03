@@ -7,6 +7,10 @@ git add .
 git commit -m "sync"
 git remote add origin https://github.com/用户名/仓库名
 git push -u origin master
+
+git add .
+git commit -m "sync"
+git push
 ```
 
 ```shell

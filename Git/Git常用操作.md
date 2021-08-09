@@ -121,6 +121,12 @@ git push origin newName
 git branch --set-upstream-to origin/newName
 ```
 
+## git查看远程仓库地址命令：
+
+```bash
+git remote -v
+```
+
 ## 修改git远程仓库地址
 
 ```shell

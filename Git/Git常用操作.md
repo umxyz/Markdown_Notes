@@ -130,6 +130,6 @@ git remote -v
 ## 修改git远程仓库地址
 
 ```shell
-git remote set-url origin https://github.com/xxx
+git remote set-url origin git@github.com:
 ```
 

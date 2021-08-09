@@ -8,18 +8,18 @@
 
 解决办法：
 
-```
-$ touch README
-$ git add README
-$ git commit –m’first commit’
-$ git push origin master
+```shell
+touch README
+git add README
+git commit –m’first commit’
+git push origin master
 ```
 
 (来自：http://www.open-open.com/lib/view/open1366080269265.html)
 实际上
 
-```html
-$ git init
+```shell
+git init
 ```
 
 这一步之后创建了一个名为.git的文件夹，不过它在默认状态下是隐藏的，系统将隐藏文件夹显示出来，可以看到有这样一个文件夹。
@@ -97,7 +97,7 @@ git push origin master
 
 在linux装完git，然后clone github的项目时出问题，报以下错误。
 
-```
+```shell
   Permission denied (publickey).
   fatal: Could not read from remote repository.
 
@@ -123,7 +123,7 @@ ssh-keygen -t rsa -C “229781766@qq.com”
 
 下面的步骤，可以一直都敲回车，如果对安全性要求很高，就自己输入密码吧。成功后，你会看到下面的提示:
 
-```
+```shell
 # Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 # The key fingerprint is:
 # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com    
@@ -139,7 +139,7 @@ Your identification has been saved in /Users/you/.ssh/id_rsa.123456789
 
 ssh-agent 貌似是对解密的专用密钥进行高速缓存。在windows 没有这一步，linux还需要手动添加到ssh-agent。首先确定ssh-agent是否启用
 
-```
+```shell
 ssh-agent -s1
 ```
 
@@ -147,7 +147,7 @@ ssh-agent -s1
 
 然后把私钥添加到ssh-agent就可以了。
 
-```
+```shell
 ssh-add ~/.ssh/id_rsa1
 ```
 
@@ -166,7 +166,7 @@ ssh-add ~/.ssh/id_rsa1
 
 如果您是在Windows机器上工作的单个开发人员，并且不关心git自动将LF替换为CRLF，则可以通过在git命令行中键入以下内容来关闭此警告
 
-```
+```shell
 git config core.autocrlf true
 ```
 
@@ -219,8 +219,6 @@ git config --global user.name "yuuxeun"
 ```shell
 ssh -t git@github.com
 ```
-
-
 
 ## 10.[fatal: read error: Connection reset by peer](https://stackoverflow.com/questions/17977206/fatal-read-error-connection-reset-by-peer)
 

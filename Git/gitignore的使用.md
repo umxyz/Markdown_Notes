@@ -1,4 +1,4 @@
-# .gitignore的使用
+# gitignore的使用
 
 ## 1. 对特定文件不追踪
 

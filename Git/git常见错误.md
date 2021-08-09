@@ -209,7 +209,7 @@ git push -u origin [name]
 
 ```shell
 git config --global user.email "229781766@qq.com"
-git config --global user.name "yuuxeun"
+git config --global user.name "umxyz"
 ```
 
 重新提交

@@ -227,3 +227,18 @@ If internet connection is also fine, just run
 ```shell
 git gc 
 ```
+
+## rror: GH007: Your push would publish a private email address.
+
+由于设置了邮箱为隐私邮箱，有两种解决方式：
+
+1. 在GITHUB上setting-Emails-Keep my email addredd private去掉勾选。
+
+2. 或者命令行中配置邮箱为username@users.noreply.github.com
+
+   ```shell
+   git config --global user.email username@users.noreply.github.com
+   ```
+
+   
+

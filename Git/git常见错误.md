@@ -1,6 +1,6 @@
 # Git常见错误与操作
 
-## **1. 出现错误 error:src refspec master does not match any**
+## **出现错误 error:src refspec master does not match any**
 
 原因分析：
 
@@ -50,7 +50,7 @@ git pull origin master
 git push origin master
 ```
 
-## 2. 如果输入$ git remoteadd origin [**git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git**](mailto:git@github.com:djqiang/gitdemo.git) 
+## 如果输入$ git remoteadd origin [**git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git**](mailto:git@github.com:djqiang/gitdemo.git) 
 
   **提示出错信息：fatal: remoteorigin already exists.**
 
@@ -66,7 +66,7 @@ git push origin master
 >
 >   5、找到一个名为gitconfig的文件，打开它把里面的`[remote "origin"]``那一行`删掉就好了！
 
-## 3. 如果输入$ ssh -T[**git@github.com**](mailto:git@github.com)
+## 如果输入$ ssh -T[**git@github.com**](mailto:git@github.com)
 
   出现错误提示：Permissiondenied (publickey).因为新生成的key不能加入ssh就会导致连接不上github。**
 
@@ -78,7 +78,7 @@ git push origin master
 >
 >   3、最好检查一下在你复制id_rsa.pub文件的内容时有没有产生多余的空格或空行，有些编辑器会帮你添加这些的。
 
-## 4. 如果输入$ git push origin master
+## 如果输入$ git push origin master
 
   **提示出错信息：error:failedto push som refs to .......**
 
@@ -91,7 +91,7 @@ git push origin master
 4. 则需要重新输入$ git remoteadd yuuxeun@github.com:yuuxeun/xxx.git
 ```
 
-## 5. Permission denied (publickey)
+## Permission denied (publickey)
 
  https://help.github.com/cn/articles/error-permission-denied-publickey 
 
@@ -158,7 +158,7 @@ ssh-add ~/.ssh/id_rsa1
 
 找了许多解决方法都搞不定，最终还是按照github 官方的流程走通了。git 不是linux的亲儿子么，怎么在linux配置比其他平台还麻烦,不得不吐槽啊。。
 
-## 6.warning: LF will be replaced by CRLF in whitelist.pac.
+## warning: LF will be replaced by CRLF in whitelist.pac.
 
 ​	The file will have its original line endings in your working directory
 
@@ -170,7 +170,7 @@ ssh-add ~/.ssh/id_rsa1
 git config core.autocrlf true
 ```
 
-## 7. error: failed to push some refs to 'https://github.com/xxxx.git'
+## error: failed to push some refs to 'https://github.com/xxxx.git'
 
 **解决办法**：错误信息中可以看出本地和远程匹配不完整, 在网上也查找了下, 总结为本地仓库和远程仓库有冲突所致 .
 
@@ -197,7 +197,7 @@ git branch [name]
 git push -u origin [name]
 ```
 
-## 8. failed to execute git
+## failed to execute git
 
 在vscoad中选择全部提交时候提示 Git:failed to execute git
 
@@ -214,13 +214,13 @@ git config --global user.name "umxyz"
 
 重新提交
 
-## 9.Host key verification failed
+## Host key verification failed
 
 ```shell
 ssh -t git@github.com
 ```
 
-## 10.[fatal: read error: Connection reset by peer](https://stackoverflow.com/questions/17977206/fatal-read-error-connection-reset-by-peer)
+## [fatal: read error: Connection reset by peer](https://stackoverflow.com/questions/17977206/fatal-read-error-connection-reset-by-peer)
 
 If internet connection is also fine, just run
 
@@ -228,7 +228,7 @@ If internet connection is also fine, just run
 git gc 
 ```
 
-## rror: GH007: Your push would publish a private email address.
+## error: GH007: Your push would publish a private email address.
 
 由于设置了邮箱为隐私邮箱，有两种解决方式：
 

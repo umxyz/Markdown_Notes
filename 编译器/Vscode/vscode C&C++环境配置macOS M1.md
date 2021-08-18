@@ -1,5 +1,7 @@
 # M1 MacOS VSCode配置C++环境
 
+==M1 MAC 因架构无法debug调试==
+
 ## 第一步：下载VSCode
 
 vscode官网国内访问确实很慢，耐心等

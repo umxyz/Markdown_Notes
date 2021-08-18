@@ -19,7 +19,7 @@
 
 操作结束。开着代理使用一下刚刚修改的应用，看看是不是已经可以正常联网了。
 
-![img](../../../#ImageAssets/v2-25533e12dea2a6798d170e7665a64ee2_720w.jpg)
+![img](../../../_ImageAssets/v2-25533e12dea2a6798d170e7665a64ee2_720w.jpg)
 
 #### 2. 通过命令行工具解除 UWP 应用网络隔离（这个办法稍微麻烦点）
 
@@ -31,7 +31,7 @@ Win + R 快捷键打开「运行」窗口，输入Regedit打开注册表编辑�
 
 Mappings 文件夹内的内容，就是所有 UWP 应用的对应的 SID。随便点击一个 SID 右边会显示应用名称。找到你要解除网络隔离的应用，复制它的 SID。
 
-![img](../../../#ImageAssets/v2-ff2849a8d4900c48e73fb272583e09eb_720w.jpg)
+![img](../../../_ImageAssets/v2-ff2849a8d4900c48e73fb272583e09eb_720w.jpg)
 
 ##### 2.打开 CMD 面板，使用 CheckNetIsolation.exe 解除应用隔离
 
@@ -39,4 +39,11 @@ Win + R 快捷键打开「运行」窗口，输入CMD打开命令行。
 
 直接在终端中输入：CheckNetIsolation.exe loopbackexempt -a -p= 等号后面加上你刚刚复制的应用 SID， 接着回车后命令行显示完成说一般就成功了。一次只能解除一个应用，想要解除多个应用，找到对应的 SID，依次解除即可。
 
-![img](../../../#ImageAssets/v2-adf04877ca0f0e55a2008528fd176d3a_720w.png)
+![img](../../../_ImageAssets/v2-adf04877ca0f0e55a2008528fd176d3a_720w.png)
+
+## 一条cmd命令的事儿
+
+```shell
+FOR /F "tokens=11 delims=\" %p IN ('REG QUERY "HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Mappings"') DO CheckNetIsolation.exe LoopbackExempt -a -p=%p
+```
+

@@ -467,7 +467,7 @@ Sailing_Counter
 
 ![img](../../_ImageAssets/820_ChsEnF7DprCAdq-BAAOnuqhhmio118.jpg)
 
-## “M菜单”功能（包含仪表盘RDC插件）
+## “M菜单”功能（包含仪表盘RDC插件、仪表盘胎温胎压）
 
 ——M菜单
 1、进入首页Headunit模块
@@ -594,6 +594,14 @@ Headunit的expert模式里搜x_view，开启既可
 2、在HU_MGU中搜索SPURWECHSELASSISTENT，改为 "gen_1"
 3、在SAS2中搜索C_SWA_VORHANDEN_VOR，改为"NRHANDEN"
 
-## Brake Force Display activation brake force (激活刹车警示加速度)
+## Brake Force Display activation brake force (激活刹车警示加速度)
 
 激活刹车显示刹车力度，默认为Medium braking (7 m/s²)，也就只能在加速度超过7 m/s²才能激活刹车提示功能，加速度数值越大说明刹车越急，所以加速度数值越闪烁机会时间更多更，具体数值可修改为Weak braking (5 m/s²)，Medium braking (7 m/s²)，Hard braking (8 m/s²)。
+
+## USB充电电流限制
+
+在headunitexpert里搜current，有个最大充电电流
+
+## 电尾门 如何刷钥匙、按钮一键开启关闭 
+
+HKL(HKFM)PHY_TASTER nichtaktiv改为aktivHKL(HKFM)REV_FBD nichtaktiv改为aktivHKL(HKFM)TASTER_FBD nichtaktiv改为aktivHKL(HKFM)SCH_TOEHKI nichtaktiv改为aktiv

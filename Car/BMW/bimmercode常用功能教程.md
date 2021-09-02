@@ -1,5 +1,7 @@
 [TOC]
 
+# [bimmercode常用功能教程](https://docs.qq.com/doc/DRWZoTEFXa2ZLY0Nl)
+
 ## 更改音频音响模式
 
 这个模式只推荐选装哈曼卡顿音响设置，或后期有加装过音响功放都可以设置，如果都没有设置这些就毫无意义
@@ -591,3 +593,7 @@ Headunit的expert模式里搜x_view，开启既可
 1、在BDC中搜索 SPURWECHSEL_ASSISTENT，改为 "aktiv"
 2、在HU_MGU中搜索SPURWECHSELASSISTENT，改为 "gen_1"
 3、在SAS2中搜索C_SWA_VORHANDEN_VOR，改为"NRHANDEN"
+
+## Brake Force Display activation brake force (激活刹车警示加速度)
+
+激活刹车显示刹车力度，默认为Medium braking (7 m/s²)，也就只能在加速度超过7 m/s²才能激活刹车提示功能，加速度数值越大说明刹车越急，所以加速度数值越闪烁机会时间更多更，具体数值可修改为Weak braking (5 m/s²)，Medium braking (7 m/s²)，Hard braking (8 m/s²)。

@@ -2,6 +2,19 @@
 
 # [bimmercode常用功能教程](https://docs.qq.com/doc/DRWZoTEFXa2ZLY0Nl)
 
+## 自动启停记忆
+
+选择Engine Control Unit DME模块
+选择 Auto Start Stop function memory 选择
+打开或者关闭即可。
+
+## 自动启停记忆V2 （切换到ECO模式启停也生效的设置）
+
+NBT模块 >
+专家模式 > 3008 FES >
+搜索 ECO_CONF_MSA >
+启用选项
+
 ## 更改音频音响模式
 
 这个模式只推荐选装哈曼卡顿音响设置，或后期有加装过音响功放都可以设置，如果都没有设置这些就毫无意义
@@ -605,3 +618,4 @@ Headunit的expert模式里搜x_view，开启既可
 ## 电尾门 如何刷钥匙、按钮一键开启关闭 
 
 HKL(HKFM)PHY_TASTER nichtaktiv改为aktivHKL(HKFM)REV_FBD nichtaktiv改为aktivHKL(HKFM)TASTER_FBD nichtaktiv改为aktivHKL(HKFM)SCH_TOEHKI nichtaktiv改为aktiv
+

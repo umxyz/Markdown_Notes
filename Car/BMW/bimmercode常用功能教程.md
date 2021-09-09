@@ -7,16 +7,16 @@
 > 2. 中控：轮胎温度显示、关闭倒车、开机等声明弹窗、开机动画、宝华韦健菜单、发动机音效、全车提示音改
 > 3. 仪表&HUD：胎压显示、车速刷新率、显示真实车速、驾驶辅助视角、开启限速显示（需要eyes）、仪表盘风格、瞬时油耗最大值改30、剩余油量警告、开机动画、logo
 
-## 自动启停记忆
+## 启停记忆
 
 选择Engine Control Unit DME模块
 选择Auto Start Stop function memory 选择 打开或者关闭即可。
 
-## 自动启停记忆V2 （切换到ECO模式启停也生效的设置，仅旧车有效）
+## ECO模式关闭启停
 
-NBT模块 >专家模式 > 3008 FES >搜索 ECO_CONF_MSA >启用选项
+hu_mgu模块 搜索 ECO_CONF_MSA 启用选项
 
-## 更改音频音响模式（旧车）
+## 更改音频音响模式
 
 这个模式只推荐选装哈曼卡顿音响设置，或后期有加装过音响功放都可以设置，如果都没有设置这些就毫无意义
 选择 HU_NBT_EVO 块 = （专家模式）> HMI 3000 >
@@ -25,9 +25,11 @@ PS：点击手机搜索，并写"HIGH_END"
 HIGH_END_AUDIO_MENUE 选择 kein_menue
 HIGH_END_AUDIO_B_AND_W 选择kein_menue
 
-## 锁车键关闭所有车窗天窗
+## 宝华音响设置菜单
 
-无忧上锁，延迟改0，但不是所有车子都支持的
+进入headunit expert模式 搜索AUDIO-SYSTEM 改为alev4-Ram
+
+立体感增强，环绕逼真
 
 ## 发动机音效设置
 
@@ -35,15 +37,27 @@ Headunit专家模式   搜索“Sound” 将两个跟Sound有关的项目都打�
 
 发动机音效可控制阀门
 
+## 锁车键关闭所有车窗天窗
+
+无忧上锁，延迟改0，但不是所有车子都支持的
+
 ## 仪表盘中间Logo
 
 ![](../../_ImageAssets/820_ChwFlF8T1vmAH_s5AAc7DyK3v3Q046.jpg)
 
 有个Logo单独拎出来说，在列表中选M是没有用的，要选msp。（M3、M4的Logo需要在M仪表盘才生效）
 
-## 瞬时油耗插件，最值改为20改30L/100KM
+## 默认仪表盘速度表最大值改为330（默认260）
 
-![img](../../_ImageAssets/820_ChsEkV8T2ZCAC6aWAAbpr5YF2js429.jpg)
+1、进入首页的Instrument Cluster
+2、进入expert模式
+3、搜索找到ag_mpa_msp_view，改成330
+
+## 瞬时油耗最大值改为30L（默认20L）
+
+1、进入首页的Instrument Cluster
+2、进入expert模式
+3、搜索找到hmi_kva_scala，改成30L
 
 ## Adaptive模式
 
@@ -75,6 +89,22 @@ Headunit专家模式   搜索“Sound” 将两个跟Sound有关的项目都打�
 6、进入headunit中expert模式
 7、找到FES_COMFORT_PLUS，将其修改为aktiv
 
+## 默认驾驶模式
+
+1、进入首页的Body Domain Controller
+2、进入expert模式，搜FesPiaDefaultLastUserMode
+01 - Sport Mode
+02 - Sport Plus Mode
+03 - Sport Individual
+04 - Comfort Mode (default)
+05 - Comfort Plus Mode
+06 - Comfort Individual
+0A - Adaptive
+07 - EcoPro Mode
+08 - EcoPro Plus Mode
+09 - EcoPro Individual
+3、选择一个默认的驾驶模式，或修改为下面的值
+
 ## 仪表盘（M、Alpina等）
 
 1、进入首页的Instrument Cluster
@@ -97,33 +127,11 @@ SICHT_ABSICHT_ENABLE: aktiv (01)
 
 Headunit，Start Animation选项，选择一个你想要的开机动画，可刷选项包括iBMW、M、Alpina等
 
-## 发动后默认驾驶模式
+## 刷XView指南针
 
-1、进入首页的Body Domain Controller
-2、进入expert模式，搜FesPiaDefaultLastUserMode
-01 - Sport Mode
-02 - Sport Plus Mode
-03 - Sport Individual
-04 - Comfort Mode (default)
-05 - Comfort Plus Mode
-06 - Comfort Individual
-0A - Adaptive
-07 - EcoPro Mode
-08 - EcoPro Plus Mode
-09 - EcoPro Individual
-3、选择一个你想要启动后默认的驾驶模式，或修改为下面的值
+Headunit的expert模式里搜x_view，开启既可
 
-## 默认仪表盘速度表最大值改为330（默认260）
-
-1、进入首页的Instrument Cluster
-2、进入expert模式
-3、搜索找到ag_mpa_msp_view，改成330
-
-## 瞬时油耗最大值改为30L（默认20L）
-
-1、进入首页的Instrument Cluster
-2、进入expert模式
-3、搜索找到hmi_kva_scala，改成30L
+注：该功能本身给X系列的SUV提供的，所以有些传感器数据没有
 
 ## 尾部日行灯（尾部示宽灯常亮）
 
@@ -178,12 +186,6 @@ Headunit 3010 M_GMBH里，会发现有一条m_vehicle_sp2018_rueko，把别的�
 
 ![img](../../_ImageAssets/820_ChwFql7HaIGAcKZ_AAMVzTYRZCY508.jpg)
 
-## 宝华音响设置菜单
-
-进入headunit expert模式 搜索AUDIO-SYSTEM 改为alev4-Ram
-
-立体感增强，环绕逼真
-
 ## 仪表盘、HUD车速刷新率
 
 Instrument cluster(KOMBI)里搜DIGIT_GESCHW_UPDATERATE
@@ -226,6 +228,20 @@ Instrument cluster(KOMBI)里搜DIGIT_GESCHW_UPDATERATE
 骚粉色 FF0066
 冰蓝色 00CCFF
 
+## USB充电电流限制
+
+headunit expert里搜current usb_max_charging_current
+
+## 电尾门 钥匙、按钮一键开启关闭 
+
+HKL(HKFM)PHY_TASTER nichtaktiv改为aktiv
+
+HKL(HKFM)REV_FBD nichtaktiv改为aktiv
+
+HKL(HKFM)TASTER_FBD nichtaktiv改为aktiv
+
+HKL(HKFM)SCH_TOEHKI nichtaktiv改为aktiv
+
 ## 刷限速标志（需要esys）
 
 通过刷以三个代码
@@ -238,31 +254,11 @@ Instrument cluster(KOMBI)里搜DIGIT_GESCHW_UPDATERATE
 
 ![img](../../_ImageAssets/820_ChwFkV8b-DKALnqzAARhim89ToU877.jpg)
 
-## 刷XView指南针
-
-Headunit的expert模式里搜x_view，开启既可
-
-注：该功能本身给X系列的SUV提供的，所以有些传感器数据没有
-
 ## 变道辅助（需要esys）
 
 1、在BDC中搜索 SPURWECHSEL_ASSISTENT，改为 "aktiv"
 2、在HU_MGU中搜索SPURWECHSELASSISTENT，改为 "gen_1"
 3、在SAS2中搜索C_SWA_VORHANDEN_VOR，改为"NRHANDEN"
-
-## USB充电电流限制
-
-headunit expert里搜usb_max_charging_current
-
-## 电尾门 如何刷钥匙、按钮一键开启关闭 
-
-HKL(HKFM)PHY_TASTER nichtaktiv改为aktiv
-
-HKL(HKFM)REV_FBD nichtaktiv改为aktiv
-
-HKL(HKFM)TASTER_FBD nichtaktiv改为aktiv
-
-HKL(HKFM)SCH_TOEHKI nichtaktiv改为aktiv
 
 ## Bimmercode选项翻译图
 

@@ -16,6 +16,8 @@
 
 hu_mgu模块 搜索 ECO_CONF_MSA 启用选项
 
+ps：屏幕和按键不会显示关闭但实际已经关闭，且只能通过编程开启
+
 ## 更改音频音响模式
 
 这个模式只推荐选装哈曼卡顿音响设置，或后期有加装过音响功放都可以设置，如果都没有设置这些就毫无意义
@@ -232,7 +234,7 @@ Instrument cluster(KOMBI)里搜DIGIT_GESCHW_UPDATERATE
 
 headunit expert里搜current usb_max_charging_current
 
-## 电尾门 钥匙、按钮一键开启关闭 
+## 电尾门 钥匙、按钮一键开启关闭 （可能跟选配无钥匙进入的自动上锁 冲突）
 
 HKL(HKFM)PHY_TASTER nichtaktiv改为aktiv
 

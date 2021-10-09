@@ -47,7 +47,7 @@ Headunit专家模式   搜索“Sound” 将两个跟Sound有关的项目都打�
 
 ![](../../_ImageAssets/820_ChwFlF8T1vmAH_s5AAc7DyK3v3Q046.jpg)
 
-有个Logo单独拎出来说，在列表中选M是没有用的，要选msp。（M3、M4的Logo需要在M仪表盘才生效）
+有几个Logo单独拎出来说，在列表中选M是没有用的，要选msp。（M3、M4等的Logo需要在M仪表盘才生效）
 
 ## 默认仪表盘速度表最大值改为330（默认260）
 

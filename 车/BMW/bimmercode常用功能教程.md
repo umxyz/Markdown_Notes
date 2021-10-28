@@ -1,6 +1,9 @@
 [TOC]
 
 # bimmercode常用功能教程
+
+==除了安全选项外 车易升有的功能 bimmercode都可以实现==
+
 ## 必刷项
 
 > 1. 系统：自动启停、升窗不中断、转向灯五次、空调记忆&内循环自动开启、未熄火锁车鸣笛、车门再上锁时间、adaptive、comfort plus、sport plus、默认驾驶模式、usb电流、倒车右后视镜下翻角度、自动大灯&雨刷灵敏度、急刹开双闪、急刹高位刹车灯、一键关闭电尾门、氛围灯颜色、锁车键关闭所有车窗天窗
@@ -107,6 +110,25 @@ Headunit专家模式   搜索“Sound” 将两个跟Sound有关的项目都打�
 09 - EcoPro Individual
 3、选择一个默认的驾驶模式，或修改为下面的值
 
+## 驾驶模式按键次数模式更改
+
+![132F6F29-6B87-4C07-A922-F6193808A69C_1_105_c](../../_ImageAssets/132F6F29-6B87-4C07-A922-F6193808A69C_1_105_c.jpeg)
+
+Body Domain Controller专家模式
+
+```shell
+01 - Sport Mode
+02 - Sport Plus Mode
+03 - Sport Individual
+04 - Comfort Mode (default)
+05 - Comfort Plus Mode
+06 - Comfort Individual
+0A - Adaptive
+07 - EcoPro Mode
+08 - EcoPro Plus Mode
+09 - EcoPro Individual
+```
+
 ## 仪表盘（M、Alpina等）
 
 1、进入首页的Instrument Cluster
@@ -182,9 +204,7 @@ Headunit 3010 M_GMBH里，会发现有一条m_vehicle_sp2018_rueko，把别的�
 1、进入首页Headunit模块
 2、进入expert模式，搜索vehicle_colour
 3、选择你想要的颜色既可
-4、搜搜TRIM_LINE可更改车型配置（可以改成M340i的模型）
-
-吐槽一句：国外的3系颜色真，羡慕
+4、搜搜TRIM_LINE可更改车型配置
 
 ![img](../../_ImageAssets/820_ChwFql7HaIGAcKZ_AAMVzTYRZCY508.jpg)
 
@@ -265,3 +285,8 @@ HKL(HKFM)SCH_TOEHKI nichtaktiv改为aktiv
 ## Bimmercode选项翻译图
 
 ![820_ChsEj18cFwCADJMkAChHvSfxh_Y447](../../_ImageAssets/820_ChsEj18cFwCADJMkAChHvSfxh_Y447.jpg)
+
+## 驾驶模式区别
+
+![img](../../_ImageAssets/v2-0a4fdecc1d5c5b89c07d9776914d3fd4_r.jpg)
+

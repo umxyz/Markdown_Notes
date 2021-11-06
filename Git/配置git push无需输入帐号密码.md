@@ -1,3 +1,5 @@
+# 配置git push无需输入帐号密码
+
 ## 编辑.git-credentials配置文件
 
 在用户根目录下,编辑 .git-credentials 文件(没有则创建一个)

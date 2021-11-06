@@ -1,5 +1,7 @@
 # gitignore的使用
 
+[TOC]
+
 ## 1. 对特定文件不追踪
 
 在` .gitignore `中写入

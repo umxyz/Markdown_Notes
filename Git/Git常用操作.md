@@ -1,5 +1,7 @@
 # Git常用操作
 
+[TOC]
+
 ## 查询当前分支的版本号(commit id)
 
 ```shell

@@ -21,6 +21,32 @@ hu_mgu模块 搜索 ECO_CONF_MSA 启用选项
 
 ps：屏幕和按键不会显示关闭但实际已经关闭，且只能通过编程开启
 
+## 主动进气格栅打开关闭代码
+
+DME模块 隐藏akks 改成00/01
+
+## M仪表路名居中
+
+主机模块 HMI_BRAND改 bmw_m
+
+## 弹射起步激活
+
+变速箱模块 SPORTSHALTER 改aktiv
+
+## USB充电电流限制
+
+headunit expert里搜current usb_max_charging_current
+
+## 电尾门 钥匙、按钮一键开启关闭 （可能跟选配无钥匙进入的自动上锁 冲突）
+
+HKL(HKFM)PHY_TASTER nichtaktiv改为aktiv
+
+HKL(HKFM)REV_FBD nichtaktiv改为aktiv
+
+HKL(HKFM)TASTER_FBD nichtaktiv改为aktiv
+
+HKL(HKFM)SCH_TOEHKI nichtaktiv改为aktiv
+
 ## 更改音频音响模式
 
 这个模式只推荐选装哈曼卡顿音响设置，或后期有加装过音响功放都可以设置，如果都没有设置这些就毫无意义
@@ -215,13 +241,30 @@ Instrument cluster(KOMBI)里搜DIGIT_GESCHW_UPDATERATE
 
 ![img](../../_ImageAssets/820_ChsEel7LoIaAKFEzAAB9yefkglg361.jpg)
 
-## 氛围灯颜色修改（本方法只适用于S2018A车型）新3系，新7系等
+## 氛围灯颜色修改（本方法只适用于S2018A车型）完整版ID7系统
 
-1、进入首页BDC的expert模式
+Bronze（默认，青铜色)
+Red 红色
+Orange 橙色
+Yellow 黄色
+Yellow-green 黄绿色
+Green 绿色
+Green-cyan 青绿色
+Cyan 青色
+Cyan-blue 青蓝色
+Blue 蓝色
+Blue-magenta 蓝洋红色
+Magenta 品红色（亮）
+Magenta-red 品红色（深）
+
+### 进阶
+
+#### 1、进入首页BDC的expert模式
+
 2、改原车颜色，360A里找到LIC_LCI_COLOR_LIBRARY_DATA
 可以看到原厂已经指定一组数字 ，其中每三个数字分别对应1个颜色，分别对应代号00，01,02,03，比如这里001A01就00。。。具体颜色如，然后在这里你可以点击CUSTOM_VALUE可以把任意一个代号的颜色（参考面），改为你想要的颜色的HEX 16进制数
 
-注意这边一个颜色的HEX值会出现3次，分别对应同的位置的灯，以绿色#0cfeb1为例
+注意这边一个颜色的HEX值会出现3次，分别对应的位置的灯，以绿色#0cfeb1为例
 
 ![img](../../_ImageAssets/820_ChwFlV8b9xiAdrNiAAISgSJOQHU231.jpg)
 
@@ -239,7 +282,8 @@ Instrument cluster(KOMBI)里搜DIGIT_GESCHW_UPDATERATE
 \- 10,FE,32 - GREEN
 \- 78,3C,FE - LILAC
 
-3、改原车氛围灯组合，找到360D里的LIC_LCI_COLOR_PROFILES_DATA
+#### 2、改原车氛围灯组合，找到360D里的LIC_LCI_COLOR_PROFILES_DATA
+
 里面这些数字01, 01, 01, 00, 02, 02, 02, 00, 00, 00, 03, 03, 03, 00, 04, 04, 04, 00, 05, 05, 05, 00
 每两个数字代号代表一组氛围灯组合，01,02,03就对应面的01,02,03
 然后按照顺序改代号，就可以更改原车的氛围灯组合
@@ -250,19 +294,11 @@ Instrument cluster(KOMBI)里搜DIGIT_GESCHW_UPDATERATE
 骚粉色 FF0066
 冰蓝色 00CCFF
 
-## USB充电电流限制
+## 变道辅助（需要esys）
 
-headunit expert里搜current usb_max_charging_current
-
-## 电尾门 钥匙、按钮一键开启关闭 （可能跟选配无钥匙进入的自动上锁 冲突）
-
-HKL(HKFM)PHY_TASTER nichtaktiv改为aktiv
-
-HKL(HKFM)REV_FBD nichtaktiv改为aktiv
-
-HKL(HKFM)TASTER_FBD nichtaktiv改为aktiv
-
-HKL(HKFM)SCH_TOEHKI nichtaktiv改为aktiv
+1、在BDC中搜索 SPURWECHSEL_ASSISTENT，改为 "aktiv"
+2、在HU_MGU中搜索SPURWECHSELASSISTENT，改为 "gen_1"
+3、在SAS2中搜索C_SWA_VORHANDEN_VOR，改为"NRHANDEN"
 
 ## 刷限速标志（需要esys）
 
@@ -275,16 +311,6 @@ HKL(HKFM)SCH_TOEHKI nichtaktiv改为aktiv
 注意这边要改成camera only,就优先通过KAFAS摄像头读取，如果没有摄像头就通过导航信息
 
 ![img](../../_ImageAssets/820_ChwFkV8b-DKALnqzAARhim89ToU877.jpg)
-
-## 变道辅助（需要esys）
-
-1、在BDC中搜索 SPURWECHSEL_ASSISTENT，改为 "aktiv"
-2、在HU_MGU中搜索SPURWECHSELASSISTENT，改为 "gen_1"
-3、在SAS2中搜索C_SWA_VORHANDEN_VOR，改为"NRHANDEN"
-
-## Bimmercode选项翻译图
-
-![820_ChsEj18cFwCADJMkAChHvSfxh_Y447](../../_ImageAssets/820_ChsEj18cFwCADJMkAChHvSfxh_Y447.jpg)
 
 ## 驾驶模式区别
 

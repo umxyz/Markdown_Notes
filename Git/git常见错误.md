@@ -142,7 +142,7 @@ Your identification has been saved in /Users/you/.ssh/id_rsa.123456789
 ssh-agent 貌似是对解密的专用密钥进行高速缓存。在windows 没有这一步，linux还需要手动添加到ssh-agent。首先确定ssh-agent是否启用
 
 ```shell
-ssh-agent -s1
+ssh-agent -s
 ```
 
 如果看到Agent pid xxxxx 那就说明已经启用
@@ -150,7 +150,7 @@ ssh-agent -s1
 然后把私钥添加到ssh-agent就可以了。
 
 ```shell
-ssh-add ~/.ssh/id_rsa1
+ssh-add ~/.ssh/id_rsa
 ```
 
 1. `cat ~/.ssh/id_rsa.pub`

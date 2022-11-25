@@ -119,14 +119,14 @@ Merge made by the 'recursive' strategy.
 
 克隆仓库的命令格式为 `git clone [url]`。比如，要克隆 Ruby 语言的 Git 代码仓库 Grit，可以用下面的命令：
 
-```
-$ git clone git://github.com/schacon/grit.git
+```shell
+git clone git://github.com/schacon/grit.git
 ```
 
 这会在当前目录下创建一个名为`grit`的目录，其中包含一个 `.git` 的目录，用于保存下载下来的所有版本记录，然后从中取出最新版本的文件拷贝。如果进入这个新建的 `grit` 目录，你会看到项目中的所有文件已经在里边了，准备好后续的开发和使用。如果希望在克隆的时候，自己定义要新建的项目目录名称，可以在上面的命令末尾指定新的名字：
 
-```
-$ git clone git://github.com/schacon/grit.git mygrit
+```shell
+git clone git://github.com/schacon/grit.git mygrit
 ```
 
 唯一的差别就是，现在新建的目录成了 `mygrit`，其他的都和上边的一样。

@@ -294,6 +294,16 @@ Magenta-red 品红色（深）
 骚粉色 FF0066
 冰蓝色 00CCFF
 
+## 便捷蹬车功能
+
+在SM2 （6D） 模块：
+3000
+SM GLOBAL - > EINAUSSTIEGSHILFE
+= Modus_ FA SLV
+3012 ek 3015 EAH-
+EAH_SCHUTZFREIRAUM_HINTEN_SLV_PHYS=
+Werte = 00, 00
+
 ## 变道辅助（需要esys）
 
 1、在BDC中搜索 SPURWECHSEL_ASSISTENT，改为 "aktiv"

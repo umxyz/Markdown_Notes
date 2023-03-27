@@ -243,7 +243,7 @@ git gc
    ```
 
 
-# [fatal: unable to access 'https://github.com/xxx': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 [duplicate\]](https://stackoverflow.com/questions/49345357/fatal-unable-to-access-https-github-com-xxx-openssl-ssl-connect-ssl-error)
+### [fatal: unable to access 'https://github.com/xxx': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 [duplicate\]](https://stackoverflow.com/questions/49345357/fatal-unable-to-access-https-github-com-xxx-openssl-ssl-connect-ssl-error)
 
 在您的终端中首先运行此命令：
 
@@ -281,6 +281,12 @@ git config --global http.proxy
 
 ```shell
 git config --global --unset http.proxy 
+```
+
+## [LibreSSL SSL_read: error:02FFF03C:system library:func(4095):Operation timed out, errno 60](https://www.cnblogs.com/lulushen/p/16893732.html)
+
+```shell
+sudo killall -HUP mDNSResponder
 ```
 
 ## Git忽略.DS_Store文件

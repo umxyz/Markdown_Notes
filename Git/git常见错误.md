@@ -370,3 +370,9 @@ git config --global core.excludesfile ~/.gitignore_global
 ```
 
 这样就不用每个git目录都设置忽略.DS_Store文件了！
+
+## [Git error: "Host Key Verification Failed" when connecting to remote repository](https://stackoverflow.com/questions/13363553/git-error-host-key-verification-failed-when-connecting-to-remote-repository)
+
+```
+ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+```
